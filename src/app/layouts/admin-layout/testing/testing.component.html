@@ -1,0 +1,38 @@
+<div class="conatiner energyCost d-flex flex-column gap-4">
+  <div class="d-flex justify-content-between align-items-start">
+    <div class="">
+      <h1 class="coustomerName">Customer Name</h1>
+      <h1 class="energyMainHeading">Energy</h1>
+    </div>
+    <app-select-month></app-select-month>
+  </div>
+
+  <div class="d-flex flex-nowrap justify-content-between align-items-center">
+    <ng-container *ngFor="let item of energyCostData">
+      <app-energy-cost-overview-card
+        [cardData]="item"
+      ></app-energy-cost-overview-card>
+    </ng-container>
+  </div>
+
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center gap-4"
+  >
+    <!-- <ng-container *ngFor="let item of energyCostData">
+             <app-energy-cost-overview-card [cardData]="item"></app-energy-cost-overview-card>
+        </ng-container> -->
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+    <app-energy-cost-details-card></app-energy-cost-details-card>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.energyOverviewCard {
+  padding: 22px;
+  width: 186px;
+  height: 123px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+}
+
+.energyTitel {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.energyCost {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.energyCostCurrency {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+// .bottomColorBar {
+//     border-bottom-left-radius: 5px;
+//     border-bottom-right-radius: 5px;
+//     height: 6px;
+// }

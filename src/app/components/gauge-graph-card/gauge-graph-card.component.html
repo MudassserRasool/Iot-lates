@@ -1,0 +1,25 @@
+<div class="gaugeCardBody">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex flex-column justify-content-between gap-2">
+      <div class="headingOfCard">{{ summeryGaugeCardData.titel }}</div>
+      <div class="percentageValue">20<span class="percentageSign">%</span></div>
+    </div>
+
+    <!-- start gauge graph---------------------------------------->
+    <ngx-gauge
+      [value]="summeryGaugeCardData.value"
+      [min]="minValue"
+      [max]="maxValue"
+      [label]="summeryGaugeCardData.behaviour"
+      [append]="'%'"
+      [size]="110"
+      [cap]="'butt'"
+      [type]="'semi'"
+      [thick]="9"
+      [thresholds]="thresholdConfig"
+      [duration]="1000"
+      
+    ></ngx-gauge>
+    <!-- end gauge graph---------------------------------------->
+  </div>
+</div>

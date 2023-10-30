@@ -1,0 +1,114 @@
+.equipmentContainer {
+  margin-top: 150px;
+  margin-left: 10px;
+}
+
+.coustomerName {
+  color: #347ae2;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.equipmentHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.selectorForm {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  width: 380.805px;
+  height: 49px;
+  flex-shrink: 0;
+  background-color: #152a4f;
+  color: white;
+  stroke-width: 1px;
+  stroke: #152a4f;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.3px;
+}
+
+.currentJob {
+  // width: 1168px;
+  height: 353px;
+
+  padding: 40px;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  // background: #FFF;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+
+  font-family: "Google Sans";
+}
+
+.currentJobHeading {
+  color: #1e2772;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.jobId {
+  color: #1e2772;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.jobHeading {
+  color: #347ae2;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+.jobInfo {
+  color: #1e2772;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.jobUnit {
+  color: #347ae2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  
+}
+
+.verticalBar {
+  width: 1.5px;
+  height: 77px;
+  background-color: #efefef;
+}
+
+.progressbarInfo {
+  color: #1e2772;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

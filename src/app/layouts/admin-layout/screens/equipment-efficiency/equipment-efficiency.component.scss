@@ -1,0 +1,288 @@
+.coustomerName {
+  color: #347ae2;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.equipmentEfficiencyCardInnerText {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.equipmentHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.machileState {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  // padding-bottom: 1px;
+
+  // margin-top: 15px;
+}
+
+.amountOfThatMachine {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.verticalBar {
+  width: 1.5px;
+  height: 62px;
+  background-color: #efefef;
+}
+
+.bottomGrayBar {
+  width: 196px;
+  height: 5px;
+  margin-top: 2px;
+  // transform: rotate(-90deg);
+  // flex-shrink: 0;
+  background-color: #c7cbec;
+}
+
+// simple card
+
+.energyOverviewCard {
+  padding: 22px;
+  width: 186px;
+  height: 123px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+}
+
+.energyTitel {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.energyCost {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.energyCostCurrency {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+// equipment effecency oven card
+
+.energyCostOverviewCard {
+  padding: 28px;
+  width: 279px;
+  // height: 275px;
+
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mainHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  // line-height: normal;
+}
+
+.amount {
+  color: #1e2772;
+  text-align: right;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  // line-height: normal;
+}
+
+.unit {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  // line-height: normal;
+}
+
+.info {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  // line-height: normal;
+}
+
+.verticalBar {
+  width: 1.5px;
+  height: 37px;
+  background-color: #efefef;
+}
+
+.colorFullBar {
+  width: 5px;
+  height: 80px;
+}
+
+.settingIconBg {
+  width: 30px;
+  height: 30px;
+  background-color: #ed4e3d;
+  border-radius: 50%;
+}
+
+.settingIcon {
+  margin-left: 6.6px;
+  margin-top: 7px;
+}
+
+.powerStatus {
+  color: #ed4e3d;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  // line-height: normal;
+}
+
+
+
+// new  css
+
+.energyCostOverviewCard {
+  padding: 20px;
+  width: 279px;
+  // height: 275px;
+  // border-radius: var(--4, 4px);
+
+  border-radius: 10px;
+  background: var(--white-100, #fff);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mainHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.amount {
+  color: #1e2772;
+  text-align: right;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.unit {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.energyInfo {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.verticalBar {
+  width: 1.5px;
+  height: 55px;
+  background-color: #efefef;
+}
+
+.colorFullBar {
+  width: 5px;
+  height: 80px;
+}
+
+.grayRoundedBackground {
+  padding: 6px;
+  border-radius: 4px;
+  //   opacity: 0.1;
+  background-color: #f4f3f7;
+
+  color: #1a1736;
+
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+
+.card-container {
+  margin-right: 10px; /* Adjust the margin as needed to control the spacing */
+}
+
+/* Add this rule to remove margin from the last card to avoid extra spacing */
+// .card-container:last-child {
+//   margin-right: 0;
+// }
+
+.progressbarInfo {
+  display: inline;
+  color: #1a1736;
+  // text-align: right;
+  font-family: "Google Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.12px;
+}

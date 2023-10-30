@@ -1,0 +1,87 @@
+.energyCostOverviewCard {
+  padding: 28px;
+  width: 279px;
+  // height: 275px;
+  border-radius: 6px;
+  background-color: #fff;
+  // background-color: #6726de;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+}
+
+.mainHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.amount {
+  color: #1e2772;
+  text-align: right;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.unit {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.verticalBar {
+  width: 1.5px;
+  height: 37px;
+  background-color: #efefef;
+}
+
+.colorFullBar {
+  width: 5px;
+  height: 80px;
+}
+
+.settingIconBg {
+  width: 30px;
+  height: 30px;
+  background-color: #ed4e3d;
+  border-radius: 50%;
+}
+
+.settingIcon {
+  margin-left: 6.6px;
+  margin-top: 7px;
+}
+
+.powerStatus {
+  color: #ed4e3d;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.progressbarInfo{
+    color: #1E2772;
+font-family: 'Google Sans';
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

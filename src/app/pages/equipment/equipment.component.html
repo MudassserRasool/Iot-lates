@@ -1,0 +1,156 @@
+<div class="conatiner equipmentContainer d-flex flex-column gap-4">
+  <h1 class="equipmentHeading">Equipment</h1>
+
+  <!-- start selectors field-------------------------- -->
+  <div class="d-flex justify-content-between">
+    <select class="selectorForm">
+      <option value="1">View Equipment Trend</option>
+      <option value="3">3</option>
+      <option value="1">1</option>
+    </select>
+
+    <select class="selectorForm">
+      <option value="1">View Previous Shift</option>
+      <option value="3">3</option>
+      <option value="1">1</option>
+    </select>
+
+    <select class="selectorForm">
+      <option value="1">Select Action</option>
+      <option value="3">3</option>
+      <option value="1">1</option>
+    </select>
+  </div>
+  <!-- end selectors field-------------------------- -->
+
+  <!-- start Current Shift----------------------- -->
+  <h1 class="equipmentHeading">Current Shift</h1>
+
+  <div class="d-flex justify-content-between align-items-center">
+    <ng-container *ngFor="let item of gaugeCardData">
+      <!-- <app-gauge-graph-card
+        [showSelect]="showSelectValue"
+        [summeryGaugeCardData]="item"
+      ></app-gauge-graph-card> -->
+    </ng-container>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center">
+    <ng-container *ngFor="let item of equipmentCardData">
+      <app-simple-card [cardData]="item"></app-simple-card>
+    </ng-container>
+  </div>
+  <!-- start Current Shift----------------------- -->
+
+  <!-- start Equipment Availability-------------------------- -->
+  <!-- <h1 class="equipmentHeading">Equipment Availability</h1> -->
+
+  <!-- <div class="chart-container"> -->
+  <!-- <ngx-charts-bar-horizontal-stacked
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="multi"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)">
+  </ngx-charts-bar-horizontal-stacked> -->
+  <!-- <div id="chart"></div> -->
+  <!--  -->
+  <!-- <div style="text-align:center"> -->
+  <!-- <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [title]="chartOptions.title"
+    ></apx-chart> -->
+  <!-- </div> -->
+
+  <!-- </div> -->
+
+  <div class="d-flex flex-column currentJob gap-4">
+    <div class="currentJobHeading">Current Job</div>
+    <div class="jobId">ID: 28668 JOB OEE: 48.64%</div>
+
+    <!-- start upper row------------------------  -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <div class="jobHeading">MT 64190 Bale Arm BLK Virgin</div>
+        <div class="jobInfo">Product</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+      <div>
+        <div class="jobHeading  d-flex align-items-start gap-1">48743 <span class="jobUnit">part</span></div>
+        <div class="jobInfo">Balance</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+      <div>
+        <div class="jobHeading">Jun 27, 23 00:49:22</div>
+        <div class="jobInfo">Estimated Completion Time</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+
+      <div class="">
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        <div class="d-flex justify-content-between mt-2">
+          <div class="progressbarInfo">Progress</div>
+          <div class="progressbarInfo">40 %</div>
+        </div>
+      </div>
+    </div>
+    <!-- end upper row------------------------  -->
+
+
+    <!-- start down row------------------------  -->
+    <div class="d-flex justify-content-between align-items-center w-50 mt-3">
+      <div>
+        <div class="jobHeading  d-flex align-items-start gap-1">21545<span class="jobUnit">part</span></div>
+        <div class="jobInfo">Product</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+      <div>
+        <div class="jobHeading  d-flex align-items-start gap-1">55 <span class="jobUnit">part</span></div>
+        <div class="jobInfo">Balance</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+      <div>
+        <div class="jobHeading  d-flex align-items-start gap-1">54 <span class="jobUnit">sec/part</span></div>
+        <div class="jobInfo">Cycle Time</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+
+      <div>
+        <div class="jobHeading  d-flex align-items-start gap-1">60 <span class="jobUnit">sec/part</span></div>
+        <div class="jobInfo">Costed Time</div>
+      </div>
+
+      <div class="verticalBar"></div>
+
+      <div>
+        <div class="jobHeading d-flex align-items-start gap-1">80 <span class="jobUnit">part</span></div>
+        <div class="jobInfo">Cavity</div>
+      </div>
+    </div>
+    <!-- end down row------------------------  -->
+  </div>
+  <!-- Your existing HTML content for the gauge cards and other data -->
+
+  <!-- start Equipment Availability-------------------------- -->
+</div>

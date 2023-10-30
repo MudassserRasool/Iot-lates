@@ -1,0 +1,136 @@
+<div class="conatiner factorSummery d-flex flex-column gap-4">
+  
+    <!-- start machine state-------------------------------------- -->
+    <div class="d-flex gap-5 justify-content-between align-items-start">
+      <div class="col col-md-6 machineInfoMainLeftCard">
+        <div class="d-flex flex-wrap justify-content-between gap-2">
+          <!-- start card---------------------------------- -->
+          <ng-container *ngFor="let item of simpleCardData">
+            <app-machine-info-simple-card
+              [cardData]="item"
+            ></app-machine-info-simple-card>
+          </ng-container>
+          <!-- end card---------------------------------- -->
+        </div>
+      </div>
+      <div class="col col-md-6">
+        <div class="d-flex flex-wrap justify-content-between gap-4 align-content-between">
+          <!-- start card---------------------------------- -->
+           <ng-container *ngFor="let item of gaugeCardData">
+            <app-gauge-graph-card
+              [summeryGaugeCardData]="item"
+            ></app-gauge-graph-card>
+          </ng-container>
+          <!-- end card---------------------------------- -->
+        </div>
+      </div>
+    </div>
+    <!-- start gaugeCard machine ifo-------------------------------------- -->
+  
+    <!-- start energy consumption data------------------------------  -->
+    <div class="d-flex gap-5 justify-content-between align-items-center">
+      <!-- start energy consumption bar chart---------------------------  -->
+      <div class="col col-md-6 cardBody p-4">
+        <div class="d-flex justify-content-between">
+          <div class="cardTitel">Energy Consumptions</div>
+          <div class="hungeryMachineContainer">
+            <div class="hungeryMachineText">Hungry Machines</div>
+          </div>
+        </div>
+        <canvas #energyConsumption></canvas>
+      </div>
+      <!-- end energy consumption bar chart---------------------------  -->
+  
+      <!-- start job---------------------------------------------------------- -->
+      <div class="col col-md-6">
+        <div class="d-flex gap-2 justify-content-between">
+          <!-- start job kp card---------------------------  -->
+          <div class="d-flex flex-column jobCard p-3">
+            <div class="cardTitel">Jobs KPI Details</div>
+            <div
+              class="d-flex flex-column justify-content-between mt-2 mx-2 gap-2"
+            >
+              <!-- start inner card---------------------  -->
+              <ng-container *ngFor="let item of gaugeCardJobKpiData">
+                <app-job-circle-card [jobCardData]="item"></app-job-circle-card>
+              </ng-container>
+              <!-- end inner card---------------------  -->
+            </div>
+          </div>
+          <!-- end job kp card---------------------------  -->
+  
+          <!-- start job maintaince card---------------------  -->
+          <div class="d-flex flex-column jobCard p-3 ms-1">
+            <div class="cardTitel">Jobs Maintenance</div>
+            <div
+              class="d-flex flex-column justify-content-between mt-2 mx-2 gap-2"
+            >
+              <!-- start inner card---------------------  -->
+              <ng-container *ngFor="let item of gaugeCardJobMaintainceData">
+                <app-job-circle-card [jobCardData]="item"></app-job-circle-card>
+              </ng-container> 
+              <!-- end inner card---------------------  -->
+            </div>
+          </div>
+         <!-- end job maintaince card -->
+        </div>
+      </div>
+      <!-- end job---------------------------------------------------------- -->
+    </div>
+    <!-- end energy consuption data------------------------------  -->
+  
+    <!-- start energy avalibility graph------------------------------  -->
+    <div class="d-flex gap-5 justify-content-between align-items-center mt-4">
+
+      <div class=" col col-md-3 cardBody p-3 gap-5" style="height: 292px;">
+        <div class="reportHeading">Analysis Report</div>
+  
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <div class="d-flex flex-column gap-1">
+            <div class="reportTitel">OEE</div>
+            <div class="reportInfo">tag line goes here</div>  
+          </div>
+          <img src="../../../assets/rightArrow.png" alt="">
+        </div>
+  
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <div class="d-flex flex-column gap-1">
+            <div class="reportTitel">OEE</div>
+            <div class="reportInfo">tag line goes here</div>  
+          </div>
+          <img src="../../../assets/rightArrow.png" alt="">
+        </div>
+  
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <div class="d-flex flex-column gap-1">
+            <div class="reportTitel">OEE</div>
+            <div class="reportInfo">tag line goes here</div>  
+          </div>
+          <img src="../../../assets/rightArrow.png" alt="">
+        </div>
+  
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <div class="d-flex flex-column gap-1">
+            <div class="reportTitel">OEE</div>
+            <div class="reportInfo">tag line goes here</div>  
+          </div>
+          <img src="../../../assets/rightArrow.png" alt="">
+        </div>
+      </div>
+  
+      <!-- start line graph---------------------------  -->
+      <div class="col mx-3 bg-white p-4 cardBody">
+        <div class="d-flex justify-content-between align-items-start">
+          <div class="avalibilityText">Availability</div>
+          <div class="d-flex flex-column gap-1">
+            <div class="runHoursLTM">Aggregated Run Hours LTM</div>
+            <div class="runHourAmount">18.42</div>
+          </div>
+        </div>
+        <canvas #availability></canvas>
+      </div>
+      <!-- end line graph---------------------------  -->
+    </div>
+    <!-- end energy avalibility graph------------------------------  -->
+  </div>
+  

@@ -1,0 +1,70 @@
+<div class="d-flex bg-white">
+  <div class="colorFullBar bg-danger mt-2"></div>
+
+  <div class="energyCostOverviewCard d-flex flex-column gap-3">
+    <!-- start first row------------------------------------ -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column">
+        <div class="d-flex gap-1 align-items-center">
+          <div class="settingIconBg">
+            <img
+              src="../../../assets/settingIcon.png"
+              alt="unable to load icon"
+              class="settingIcon"
+            />
+          </div>
+          <div class="mainHeading">Oven</div>
+        </div>
+
+        <div class="info mt-2">
+          3h, 9m.<span class="powerStatus"> Powered off</span>
+        </div>
+        <div class="info">Auto close: True</div>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <div class="amount">0<span class="unit"> %</span></div>
+        <div class="info">Shift OEE</div>
+      </div>
+    </div>
+    <!-- end first row------------------------------------ -->
+
+    <!-- start second row------------------------------------ -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column align-items-start gap-1">
+        <div class="amount">1</div>
+        <div class="info">Actual Cavity</div>
+      </div>
+      <div class="verticalBar"></div>
+      <div class="d-flex flex-column align-items-start gap-1">
+        <div class="amount">1</div>
+        <div class="info">Total Cavity</div>
+      </div>
+    </div>
+    <!-- end second row------------------------------------ -->
+
+    <!-- start second row------------------------------------ -->
+    <div>
+      <div class="info">Unit Production Time</div>
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <div class="d-flex flex-column align-items-start gap-1">
+          <div class="amount">80 <span class="unit">sec</span></div>
+          <div class="info">Run time Energy Cost</div>
+        </div>
+        <div class="verticalBar"></div>
+        <div class="d-flex flex-column align-items-start gap-1">
+          <div class="amount">81.66 <span class="unit">sec</span></div>
+          <div class="info">Run time Energy Cost</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      <div class="d-flex justify-content-between mt-2">
+        <div class="progressbarInfo">STRA-GN220-BLK-ST</div>
+        <div class="progressbarInfo">322L GARDEN STORAGE B..</div>
+      </div>
+    </div>
+    <!-- end second row------------------------------------ -->
+  </div>
+</div>

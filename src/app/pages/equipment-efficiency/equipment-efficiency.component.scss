@@ -1,0 +1,71 @@
+.equipmentContainer {
+  margin-top: 150px;
+  margin-left: 10px;
+}
+
+.coustomerName {
+  color: #347ae2;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.equipmentEfficiencyCardInnerText {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.equipmentHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.machileState {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  // padding-bottom: 1px;
+
+  // margin-top: 15px;
+}
+
+.amountOfThatMachine {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.verticalBar {
+  width: 1.5px;
+  height: 62px;
+  background-color: #efefef;
+}
+
+.bottomGrayBar {
+  width: 196px;
+  height: 5px;
+  margin-top: 2px;
+  // transform: rotate(-90deg);
+  // flex-shrink: 0;
+  background-color: #c7cbec;
+}

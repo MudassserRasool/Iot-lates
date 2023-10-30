@@ -1,0 +1,55 @@
+<div class="container-fluid card w-75 mx-auto shadow mt-4">
+  <div class="row">
+    <div class="col md-col-12">
+      <div class="row align-items-center">
+        <!-- start left side of login page------------------- -->
+        <div class="col col-md-5 loginLeftSideBg">
+          <div class="d-flex mx-3 p-2">
+            <div class="d-flex flex-column gap-4 example-form">
+              <h1 class="formHeading">Two-step authentication</h1>
+
+              <div class="d-flex justify-content-center">
+                <img src="../../../../assets/OtpScuess.png" alt="" />
+              </div>
+              <div class="successfullyEnabled">Successfully enabled</div>
+              <p class="emailAuthenticationInfo  mt-2">
+                Your phone number is set to +845 4587 214
+                Authentication codes will be texted to this number for logging in.
+              </p>
+          
+              <!-- start button-------------------- -->
+              <button
+                class="d-flex forgetButton justify-content-center"
+                mat-raised-button
+                color="primary"
+                (click)="onLoginButtonClick()"
+              >
+                <p class="forgetText my-auto">Done</p>
+              </button>
+              <!-- end button-------------------- -->
+            </div>
+          </div>
+        </div>
+        <!-- end left side of login page------------------- -->
+
+        <!-- start left side of login page------------------- -->
+        <div
+          class="col col-md-7 forgetRightSideBgColor p-4 justify-content-between order-first order-md-last"
+        >
+          <!-- start logo and heading------------------ -->
+          <div class="d-flex gap-4 align-items-center justify-content-center">
+            <img src="../../../assets/IotLogo.png" alt="unable to load logo" />
+            <h1 class="rightSideAmsIottext">AMS IOT</h1>
+          </div>
+          <!-- end logo and heading------------------ -->
+          <img
+            src="../../../assets/loginImage.png"
+            alt="unable to load"
+            class="d-none d-md-block forgetImage"
+          />
+        </div>
+        <!-- end left side of login page------------------- -->
+      </div>
+    </div>
+  </div>
+</div>

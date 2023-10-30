@@ -1,0 +1,10 @@
+/* .mat-icon, .material-icons {
+    color: red;
+  } */
+
+
+  /* Set the text color for non-active <p> elements */
+.nav-link p.non-active-text {
+    color: #A9AFBB !important;
+  }
+  

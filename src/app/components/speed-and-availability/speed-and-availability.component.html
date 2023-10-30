@@ -1,0 +1,96 @@
+
+
+<div class="d-flex bg-white">
+  <div class="colorFullBar bg-danger mt-2"></div>
+
+  <div class="energyCostOverviewCard d-flex flex-column gap-3">
+    <!-- start first row------------------------------------ -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column">
+        <div class="d-flex gap-1 align-items-center">
+          <div class="settingIconBg">
+            <img
+              src="../../../assets/settingIcon.png"
+              alt="unable to load icon"
+              class="settingIcon"
+            />
+          </div>
+          <div class="mainHeading">Oven</div>
+        </div>
+
+        <div class="info mt-2">
+          3h, 9m.<span class="powerStatus"> Powered off</span>
+        </div>
+        <div class="info">Auto close: True</div>
+      </div>
+    </div>
+    <!-- end first row------------------------------------ -->
+
+    <!-- start second row------------------------------------ -->
+    <div class="d-flex justify-content-between align-items-start">
+      <div class="d-flex flex-column align-items-start gap-1">
+        <div class="performanceHeading">Shift Performance</div>
+      </div>
+      <div class="d-flex flex-column align-items-start gap-1">
+        <div class="info">Actual :<span class="quantity">213</span></div>
+        <div class="info">Target :<span class="quantity">313</span></div>
+      </div>
+    </div>
+    <!-- end second row------------------------------------ -->
+
+    <!-- start first performance------------------------------------ -->
+    <ngx-gauge
+      [value]="summeryGaugeCardData.value"
+      [min]="minValue"
+      [max]="maxValue"
+      [label]="summeryGaugeCardData.behaviour"
+      [append]="'%'"
+      [size]="210"
+      [cap]="'round'"
+      [type]="'arch'"
+      [thick]="15"
+      [thresholds]="thresholdConfig"
+      [duration]="1000"
+    ></ngx-gauge>
+
+    <div class="">
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      <div class="mt-2">
+        <div class="progressbarInfo">Previous Shift Performance</div>
+      </div>
+    </div>
+    <!-- end first performance------------------------------------ -->
+
+    <!-- start second performance------------------------------------ -->
+    <div class="performanceHeading">Shift Performance</div>
+
+    <ngx-gauge
+      [value]="summeryGaugeCardData.value"
+      [min]="minValue"
+      [max]="maxValue"
+      [label]="summeryGaugeCardData.behaviour"
+      [append]="'%'"
+      [size]="210"
+      [cap]="'round'"
+      [type]="'arch'"
+      [thick]="15"
+      [thresholds]="thresholdConfig"
+      [duration]="1000"
+    ></ngx-gauge>
+
+    <div class="z">
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      <div class="mt-2">
+        <div class="progressbarInfo">Current Shift Availability</div>
+      </div>
+    </div>
+
+    <div class="">
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      <div class="mt-2">
+        <div class="progressbarInfo">Previous Shift Availability</div>
+      </div>
+    </div>
+    <!-- end second performance------------------------------------ -->
+  </div>
+</div>

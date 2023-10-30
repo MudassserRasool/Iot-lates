@@ -1,0 +1,92 @@
+.forgetLeftSideBg {
+  background-color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.forgetRightSideBgColor {
+  background-color: #f8f8f8;
+}
+
+.forgetImage {
+  width: 100%;
+  height: 306px;
+  margin-top: 158px;
+}
+
+.formHeading {
+  color: #1e2772;
+  font-family: "Inter";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  // line-height: normal;
+}
+
+.emailAuthenticationInfo {
+  color: #1e2772;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163.523%; /* 26.164px */
+}
+// start material form --------
+.example-form {
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+
+.inputStyle {
+  border: 3px solid #1e2772;
+  // background: #FFF;
+  stroke-width: 1px;
+  stroke: #1e2772;
+}
+
+.eyeIconButton {
+  border: none;
+  /* Remove the border */
+  margin-right: 30px;
+  /* Add a 30px margin on the right side */
+}
+
+.forgetButton {
+  margin-top: 14px;
+  background: linear-gradient(90deg, #1e2772 2.56%, #09aef9 99.94%);
+  height: 50px;
+  border-radius: 5px;
+}
+
+.forgetText {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  // text-align: center;
+  // text-justify: center;
+}
+
+// .loginLeftSideBg {
+//     background-color: #FFFFFF;
+//     margin-top: auto;
+//     margin-bottom: auto;
+//   }
+
+.rightSideAmsIottext {
+  color: #000;
+  font-family: "Audiowide";
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 20px;
+}
+//
+.forgetRightSideBgColor {
+  background-color: "#F8F8F8";
+}

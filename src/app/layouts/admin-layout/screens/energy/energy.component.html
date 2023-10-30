@@ -1,0 +1,72 @@
+<div class="conatiner d-flex flex-column">
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center gap-2"
+  >
+    <div class="energyOverviewCard" *ngFor="let item of energyCostData">
+      <div class="d-flex flex-column gap-3 align-items-center">
+        <div class="energyTitel">{{ item.energyTitel }}</div>
+        <div class="energyCost">
+          <span class="energyCostCurrency"></span> {{ item.energyCost }}
+        </div>
+      </div>
+      <!-- <div class="bottomColorBar" [style.background-color]="item.color"></div> -->
+    </div>
+  </div>
+
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center gap-2"
+  >
+    <!-- <app-energy-cost-details-card></app-energy-cost-details-card> -->
+
+    <!-- start energy detail card-------------------------------    -->
+    <div *ngFor="let _ of [1, 2, 3, 4, 5, 6, 7, 8,9]; let i = index" class="d-flex mb-3">
+      <div class="colorFullBar bg-danger mt-2"></div>
+    
+      <div class="energyCostOverviewCard d-flex flex-column gap-4">
+        <!-- start first row------------------------------------ -->
+        <div class="d-flex justify-content-between align-items-start mx-2 mt-1">
+          <div class="mainHeading">W0{{ i + 1 }}</div>
+          <div class="d-flex flex-column align-items-start">
+            <div class="amount">7.35 <span class="unit"> KW/H</span></div>
+            <div class="energyInfo">Energy Consumed</div>
+          </div>
+        </div>
+        <!-- end first row------------------------------------ -->
+    
+        <!-- start second row------------------------------------ -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <div class="d-flex flex-column align-items-start gap-1">
+            <div class="amount">7.35 <span class="unit"> KW/H</span></div>
+            <div class="energyInfo">Energy Consumed</div>
+            <div class="amount"><span class="unit">€</span> 7.35</div>
+          </div>
+          <div class="verticalBar"></div>
+          <div class="d-flex flex-column align-items-start gap-1">
+            <div class="amount">8.35 <span class="unit"> KW/H</span></div>
+            <div class="energyInfo">Energy Consumed</div>
+            <div class="amount"><span class="unit">€</span> 7.35</div>
+          </div>
+        </div>
+        <!-- end second row------------------------------------ -->
+    
+        <!-- start second row------------------------------------ -->
+        <div class="mt-3">
+          <div class="grayRoundedBackground">Energy Cost/kwh € 0.17</div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <div class="d-flex flex-column align-items-start gap-1">
+              <div class="amount"><span class="unit">€</span> 7.35</div>
+              <div class="energyInfo">Energy Consumed</div>
+            </div>
+            <div class="verticalBar"></div>
+            <div class="d-flex flex-column align-items-start gap-1">
+              <div class="amount"><span class="unit">€</span> 7.35</div>
+              <div class="energyInfo">Energy Consumed</div>
+            </div>
+          </div>
+        </div>
+        <!-- end second row------------------------------------ -->
+      </div>
+    </div> 
+    <!-- end energy detail card-------------------------------    -->
+  </div>
+</div>

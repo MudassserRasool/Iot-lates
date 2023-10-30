@@ -1,0 +1,142 @@
+<div class="conatiner factorSummery d-flex flex-column">
+  <!-- start machine state-------------------------------------- -->
+  <div class="d-flex justify-content-between align-items-center gap-2">
+    <div class="" *ngFor="let cardData of gaugeCardData">
+      <div class="d-flex justify-content-between gap-4">
+        <div class="gaugeCardBody">
+          <div class="">
+            <div class="headingOfCard">{{ cardData.titel }}</div>
+
+            <div class="ml-5">
+              <ngx-gauge
+                [value]="cardData.value"
+                [min]="minValue"
+                [max]="maxValue"
+                [label]="cardData.behaviour"
+                [append]="'%'"
+                [size]="110"
+                [cap]="'butt'"
+                [type]="'semi'"
+                [thick]="9"
+                [thresholds]="thresholdConfig"
+                [duration]="1000"
+              ></ngx-gauge>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start gaugeCard machine ifo-------------------------------------- -->
+
+  <!-- start equipment eficency row-------------------------------------- -->
+  <div class="d-flex justify-content-between align-items-center gap-2">
+    <div
+      *ngFor="let _ of [1, 2, 3, 4]; let i = index"
+      class="energyOverviewCard"
+    >
+      <div class="d-flex flex-column gap-3 align-items-center">
+        <div class="energyTitel">Production (Auto) {{ i + 1 }}</div>
+        <div class="energyCost mt-3">
+          <span class="energyCostCurrency"></span> {{ i + 1444 }} Parts
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end equipment eficency row-------------------------------------- -->
+
+  <!-- start eqipment avalibility----------------------------- -->
+  <div>
+    <div class="downTimeHeading my-2">Equipment Availability</div>
+
+    <div class="currentJobCard">
+      <div>
+        <div class="jobMainText">Current Job</div>
+        <div class="jobSmallText">
+          ID: 28668 JOB OEE: <span class="text-primary">48.64%</span>
+        </div>
+      </div>
+
+      <div class="d-flex mt-3">
+        <!-- start left text and mat-progress-bar-------------------------- -->
+        <div class="d-flex flex-column">
+          <div class="d-flex align-items-center gap-2">
+            <div>
+              <div class="jobMainText">MT 64190 Bale Arm BLK Virgin</div>
+              <div class="jobSmallText">Product</div>
+            </div>
+            <div class="verticalJobBar ml-2"></div>
+          </div>
+
+          <div class="d-flex mt-4 align-items-center gap-2">
+            <mat-progress-bar
+              style="width: 97%"
+              mode="determinate"
+              value="40"
+            ></mat-progress-bar>
+            <div class="verticalJobBar ml-2"></div>
+          </div>
+        </div>
+        <!-- end left text and mat-progress-bar-------------------------- -->
+
+        <!-- start circular guage graph--------------------- -->
+        <div class="col-8">
+          <div class="d-flex flex-nowrap justify-content-between">
+            <!-- start first circular graph card----------------------  -->
+              <div class="d-flex gap-3 align-items-center" *ngFor="let cardData of gaugeCardData">
+                <div >
+                  <ngx-gauge
+                  [value]="cardData.value"
+                  [min]="minValue"
+                  [max]="maxValue"
+                  [size]="50"
+                  [cap]="'butt'"
+                  [type]="'full'"
+                  [thick]="5"
+                  [thresholds]="thresholdConfig"
+                  [duration]="1000"
+                ></ngx-gauge>
+                </div>
+                <div>
+                  <div class="jobMainText">4874</div>
+                  <div class="jobSmallText">Balance</div>
+                </div>
+            <div class="verticalJobBar mx-2"></div>
+
+              </div>
+            <!-- end first circular graph card----------------------  -->
+
+          </div>
+          <div class="d-flex flex-nowrap justify-content-between">
+            <!-- start first circular graph card----------------------  -->
+              <div class="d-flex gap-2 align-items-center" *ngFor="let cardData of gaugeCardData">
+                <div >
+                  <ngx-gauge
+                  [value]="cardData.value"
+                  [min]="minValue"
+                  [max]="maxValue"
+                  [size]="50"
+                  [cap]="'butt'"
+                  [type]="'full'"
+                  [thick]="5"
+                  [thresholds]="thresholdConfig"
+                  [duration]="1000"
+                ></ngx-gauge>
+                </div>
+                <div>
+                  <div class="jobMainText">487</div>
+                  <div class="jobSmallText">Balance</div>
+                </div>
+            <div class="verticalJobBar mx-2"></div>
+              </div>
+          
+
+            <!-- end first circular graph card----------------------  -->
+          </div>
+        </div>
+        <!-- end circular guage graph--------------------- -->
+      </div>
+    </div>
+  </div>
+  <!-- end eqipment avalibility----------------------------- -->
+</div>

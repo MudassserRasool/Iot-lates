@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-between align-items-center bg-white">
+  <div class="">
+    <div class="jobName">{{ jobCardData.titel }}</div>
+    <div class="jobAmount">{{ jobCardData.value }}</div>
+  </div>
+  <!-- start gauge graph---------------------------------------->
+  <ngx-gauge
+     [value]="jobCardData.percent"
+     [min]="minValue"
+     [max]="maxValue"
+     [append]="'%'"
+     [size]="80"
+     [cap]="'round'"
+     [type]="'full'"
+     [thick]="7"
+     [thresholds]="thresholdConfig"
+     [duration]="1000"
+     
+   ></ngx-gauge>
+  <!-- end gauge graph---------------------------------------->
+</div>

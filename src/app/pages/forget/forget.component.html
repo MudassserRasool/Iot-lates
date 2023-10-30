@@ -1,0 +1,51 @@
+<div class="container-fluid card w-75 mx-auto shadow   mt-4">
+    <div class="row">
+      <div class="col md-col-12">
+        <div class="row align-items-center">
+          <!-- start left side of login page------------------- -->
+          <div class="col col-md-5 loginLeftSideBg">
+  
+            <div class="d-flex mx-3 p-2 " >
+              <div class="d-flex flex-column gap-4  example-form">
+                <!-- start form------------------------------->
+                <h1 class="formHeading">Forgot Password?</h1>
+                <form class=" gap-4">
+                  <!-- start email-------------<mat-form-field appearance="outline"> -->
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                      Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                      Email is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  <!-- end email------------- -->
+                  <div class="text-danger">{{ errorMessage }}</div>
+                </form>
+                <!-- end form------------------------------->
+                <!-- start button-------------------- -->
+                  <button class="d-flex forgetButton  justify-content-center" mat-raised-button color="primary" (click)="onLoginButtonClick()"> <p class="forgetText my-auto">RESET YOUR PASSWORD</p></button>
+                
+                <!-- end button-------------------- -->
+              </div>
+            </div>
+          </div>
+          <!-- end left side of login page------------------- -->
+  
+          <!-- start left side of login page------------------- -->
+          <div class="col col-md-7 forgetRightSideBgColor p-4 justify-content-between  order-first order-md-last">
+            <!-- start logo and heading------------------ -->
+            <div class="d-flex gap-4 align-items-center justify-content-center">
+              <img src="../../../assets/IotLogo.png" alt="unable to load logo">
+              <h1 class="rightSideAmsIottext">AMS IOT</h1>
+            </div>
+            <!-- end logo and heading------------------ -->
+            <img src="../../../assets/loginImage.png" alt="unable to load" class="d-none d-md-block forgetImage">
+          </div>
+          <!-- end left side of login page------------------- -->
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,98 @@
+
+
+.coustomerName {
+  color: #347ae2;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.maintainceDetailHeading {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tableHeaderFont {
+  color: #fff;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tableDataFont {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.notStartedBox {
+  width: 72px;
+  height: 19px;
+  padding: 2px 5px 3px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(237, 78, 61, 0.3);
+}
+.notStartedText {
+  color: #000;
+  text-align: center;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stoppedBox {
+  width: 72px;
+  height: 19px;
+  padding: 2px 5px 3px 4px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  background: rgba(88, 197, 64, 0.3);
+}
+.stoppedText {
+  color: #000;
+  text-align: center;
+  font-family: "Google Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.runningBox {
+  width: 72px;
+  height: 19px;
+  padding: 2px 5px 3px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #58c540;
+}
+.runningText {
+  color: #fff;
+  text-align: center;
+  font-family: Google Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

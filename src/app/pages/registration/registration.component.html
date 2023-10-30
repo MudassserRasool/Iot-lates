@@ -1,0 +1,264 @@
+<div class="container-fluid card shadow bg-white max-auto w-75 mt-4 mb-4">
+  <div class="row">
+    <div class="col md-col-12">
+      <div class="row align-items-center bg-light bg--md-white">
+        <!-- start left side of login page------------------- -->
+        <div class="col col-md-5 loginLeftSideBg py-3">
+          <div class="d-flex mx-3 p-2">
+            <div class="d-flex flex-column gap-4 mx-auto">
+              <!-- start form------------------------------->
+              <h1 class="formHeading">Sign Up</h1>
+              <form class="example-form gap-4">
+                <!-- Full Name Field -->
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Full Name</mat-label>
+                  <input
+                    matInput
+                    [formControl]="fullNameFormControl"
+                    placeholder="Ex. John Doe"
+                  />
+                  <mat-error *ngIf="fullNameFormControl.hasError('required')">
+                    Full Name is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+                <!-- end Name Field------------- -->
+
+                <!-- start email-------------<mat-form-field appearance="outline"> -->
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input
+                    matInput
+                    [formControl]="emailFormControl"
+                    placeholder="Ex. pat@example.com"
+                  />
+                  <mat-error
+                    *ngIf="
+                      emailFormControl.hasError('email') &&
+                      !emailFormControl.hasError('required')
+                    "
+                  >
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+                <!-- end email------------- -->
+                <!-- Phone Number Field -->
+                <!-- <form #f="ngForm" [formGroup]="phoneForm" class="example-full-width ">
+                                    <div class="wrapper">
+                                        <ngx-intl-tel-input [cssClass]="'custom'"
+                                            [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="true"
+                                            [enablePlaceholder]="true" [searchCountryFlag]="true" [searchCountryField]="[
+          SearchCountryField.Iso2,
+          SearchCountryField.Name
+        ]" [selectFirstCountry]="false" [selectedCountryISO]="CountryISO.India" [maxLength]="15"
+                                            [phoneValidation]="true" [separateDialCode]="separateDialCode"
+                                            [numberFormat]="PhoneNumberForm1at.National" name="phone"
+                                            formControlName="phone">
+                                        </ngx-intl-tel-input>
+                                    </div> -->
+                <!-- <div class="wrapper">
+      <button (click)="f.reset()">Reset</button>
+    </div> -->
+                <!-- </form> -->
+
+                <!-- start passward-------------- -->
+                <!-- Password Field -->
+                <!-- Password Field -->
+                <!-- Password Field -->
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input
+                    type="{{ hidePassword ? 'password' : 'text' }}"
+                    matInput
+                    [formControl]="passwordFormControl"
+                    placeholder="Password"
+                    #passwordInput
+                  />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    class="eyeIconButton"
+                    (click)="togglePasswordVisibility(passwordInput)"
+                    [attr.aria-label]="'Toggle password visibility'"
+                  >
+                    <mat-icon>
+                      {{ hidePassword ? "visibility_off" : "visibility" }}
+                    </mat-icon>
+                  </button>
+                  <mat-error *ngIf="passwordFormControl.hasError('required')">
+                    Password is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+                <div class="password-validation mb-2 d-flex flex-column gap-2">
+                  <div
+                    [ngClass]="{
+                      'text-danger': !isPasswordMinLengthValid(),
+                      'text-success': isPasswordMinLengthValid()
+                    }"
+                    class="password-rule d-flex align-items-center gap-3"
+                  >
+                    <i class="material-icons">
+                      {{
+                        isPasswordMinLengthValid() ? "check_circle" : "cancel"
+                      }}
+                    </i>
+                    Must be at least 8 characters!
+                  </div>
+
+                  <div
+                    [ngClass]="{
+                      'text-danger': !isPasswordValid('hasNumber'),
+                      'text-success': isPasswordValid('hasNumber')
+                    }"
+                    class="password-rule d-flex align-items-center gap-3"
+                  >
+                    <i class="material-icons">
+                      {{
+                        isPasswordValid("hasNumber") ? "check_circle" : "cancel"
+                      }}
+                    </i>
+                    Must contain at least 1 number!
+                  </div>
+                  <div
+                    [ngClass]="{
+                      'text-danger': !isPasswordValid('hasCapitalCase'),
+                      'text-success': isPasswordValid('hasCapitalCase')
+                    }"
+                    class="password-rule d-flex align-items-center gap-3"
+                  >
+                    <i class="material-icons">
+                      {{
+                        isPasswordValid("hasCapitalCase")
+                          ? "check_circle"
+                          : "cancel"
+                      }}
+                    </i>
+                    Must contain at least 1 in Capital Case!
+                  </div>
+                  <div
+                    [ngClass]="{
+                      'text-danger': !isPasswordValid('hasSmallCase'),
+                      'text-success': isPasswordValid('hasSmallCase')
+                    }"
+                    class="password-rule d-flex align-items-center gap-3"
+                  >
+                    <i class="material-icons">
+                      {{
+                        isPasswordValid("hasSmallCase")
+                          ? "check_circle"
+                          : "cancel"
+                      }}
+                    </i>
+                    Must contain at least 1 Letter in Small Case!
+                  </div>
+                  <div
+                    [ngClass]="{
+                      'text-danger': !isPasswordValid('hasSpecialCharacters'),
+                      'text-success': isPasswordValid('hasSpecialCharacters')
+                    }"
+                    class="password-rule d-flex align-items-center gap-3"
+                  >
+                    <i class="material-icons">
+                      {{
+                        isPasswordValid("hasSpecialCharacters")
+                          ? "check_circle"
+                          : "cancel"
+                      }}
+                    </i>
+                    Must contain at least 1 Special Character!
+                  </div>
+                </div>
+
+                <!-- <div class=""> -->
+                <!-- start red error--------------- -->
+                <!-- <div class="d-flex gap-2">
+        <img src="../../../assets/CrossIcon.png" alt="unable to load">
+        <p class="errorText">At least 8 characters</p>
+    </div> -->
+                <!-- end red error--------------- -->
+
+                <!-- </div> -->
+
+                <!-- Confirm Password Field -->
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Confirm Password</mat-label>
+                  <input
+                    type="{{ hidePassword ? 'password' : 'text' }}"
+                    matInput
+                    [formControl]="confirmPasswordFormControl"
+                    placeholder="Confirm Password"
+                    (ngModelChange)="comparePasswords()"
+                  />
+                  <mat-error
+                    *ngIf="confirmPasswordFormControl.hasError('required')"
+                  >
+                    Confirm Password is <strong>required</strong>
+                  </mat-error>
+                  <mat-error *ngIf="passwordsDoNotMatch">
+                    Passwords do not match
+                  </mat-error>
+                </mat-form-field>
+
+                <!-- end passward-------------- -->
+
+                <!-- START CHECKBOX------------  -->
+                <!-- Terms & Conditions Checkbox -->
+                <div class="d-flex align-items-center">
+                  <mat-checkbox [formControl]="termsAndConditionsFormControl">
+                    Yes, I have read and agree to Terms & Conditions
+                  </mat-checkbox>
+                </div>
+
+                <!-- Privacy Policy Checkbox -->
+                <div class="d-flex align-items-center">
+                  <mat-checkbox [formControl]="privacyPolicyFormControl">
+                    Yes, I have read and agree to Privacy Policy
+                  </mat-checkbox>
+                </div>
+
+                <!-- END CHECKBOX------------  -->
+
+                <div class="text-danger">{{ errorMessage }}</div>
+              </form>
+              <!-- end form------------------------------->
+
+              <!-- start button-------------------- -->
+              <button
+                class="d-flex loginButton justify-content-center"
+                mat-raised-button
+                color="primary"
+                (click)="onLoginButtonClick()"
+              >
+                LOG IN
+              </button>
+              <!-- </div> -->
+
+              <!-- end button-------------------- -->
+            </div>
+          </div>
+        </div>
+        <!-- end left side of login page------------------- -->
+
+        <!-- start left side of login page------------------- -->
+        <div
+          class="col col-md-7 loginRightSideBgColor p-4 justify-content-between order-first order-md-last"
+        >
+          <!-- start logo and heading------------------ -->
+          <div class="d-flex gap-4 align-items-center justify-content-center">
+            <img src="../../../assets/IotLogo.png" alt="unable to load logo" />
+            <h1 class="rightSideAmsIottext">AMS IOT</h1>
+          </div>
+          <!-- end logo and heading------------------ -->
+          <img
+            src="../../../assets/signUpImgae.png"
+            alt="unable to load"
+            class="d-none d-md-block loginImage"
+          />
+        </div>
+        <!-- end left side of login page------------------- -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,156 @@
+.machineInfoMainLeftCard {
+  padding: 7px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+// guage graph card
+
+.gaugeCardBody {
+  width: 240px;
+  height: 130px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.selector {
+  width: 68px;
+  height: 27px;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  border: 0.5px solid #d5d6da;
+  background-color: #fff;
+}
+
+.headingOfCard {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.percentageValue {
+  color: #e21d1d;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.percentageSign {
+  color: #e21d1d;
+  font-family: "Google Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
+.hungeryMachineContainer {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 4px 10px 5px 13px;
+}
+
+.hungeryMachineText {
+  color: #1a1736;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.energyOverviewCard {
+  padding: 22px;
+  width: 240px;
+  height: 130px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+}
+
+.energyTitel {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.energyCost {
+  color: #1a1736;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.energyCostCurrency {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.downTimeHeading {
+  color: #1a1736;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.currentJobCard {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.jobMainText {
+  color: #1a1736;
+  font-family: Google Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.jobSmallText {
+  color: #1a1736;
+  font-family: Google Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.18px;
+}
+
+.verticalJobBar {
+  width: 1.5px;
+  height: 77px;
+  background-color: #efefef;
+}
+
+.circleGraphCard{
+    
+}

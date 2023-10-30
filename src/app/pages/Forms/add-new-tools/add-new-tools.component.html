@@ -1,0 +1,239 @@
+<div class="container formPage">
+  <div class="formHeading">Add New Tool</div>
+
+  <form class="row mt-4">
+    <!-- start Tool Id input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Tool Id
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Enter Tool Id" [formControl]="toolId" />
+      <mat-error *ngIf="toolId.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Tool Id input--------------------------- -->
+
+    <!-- start Factory input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >factory
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Enter Factory" [formControl]="factory" />
+      <mat-error *ngIf="factory.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Factory input--------------------------- -->
+
+    <!-- start Description selector--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label>
+        Description
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="description">
+        <mat-option value="Description-1">Description-1</mat-option>
+        <mat-option value="Description-2">Description-2</mat-option>
+      </mat-select>
+      <mat-error *ngIf="description.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Description selector--------------------------- -->
+
+    <!-- start Total Weight (KG) selector--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label>
+        Total Weight (KG)
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="weight">
+        <mat-option value="weight-1">weight-1</mat-option>
+        <mat-option value="weight-2">weight-2</mat-option>
+      </mat-select>
+      <mat-error *ngIf="weight.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Total Weight (KG) selector--------------------------- -->
+
+    <!-- start Total Cavity input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Total Cavity
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Total Cavity" [formControl]="totalCavity" />
+      <mat-error *ngIf="totalCavity.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Total Cavity input--------------------------- -->
+
+    <!-- start Measurement Unit selector--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label>
+        Measurement Unit
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="measurementUnit">
+        <mat-option value="kg">kg</mat-option>
+        <mat-option value="mg">mg</mat-option>
+      </mat-select>
+      <mat-error *ngIf="measurementUnit.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Measurement Unit selector--------------------------- -->
+
+    <!-- start Costed Unit Time input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Costed Unit Time
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Enter Number" [formControl]="costUnitTime" />
+      <mat-error *ngIf="costUnitTime.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Costed Unit Time input--------------------------- -->
+
+    <!-- start Location input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Location
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Enter Location" [formControl]="location" />
+      <mat-error *ngIf="location.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Location input--------------------------- -->
+
+    <!-- start Lifting--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel"
+        >Lifting <img src="../../../assets/InputInfoIcon.png" alt="info"
+      /></mat-checkbox>
+    </div>
+    <!-- end Lifting--------------------------- -->
+
+    <!-- start Family Mould--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel"
+        >Family Mould <img src="../../../assets/InputInfoIcon.png" alt="info"
+      /></mat-checkbox>
+    </div>
+    <!-- end Family Mould--------------------------- -->
+
+    <!-- start Customer input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Customer
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Enter Text" [formControl]="customer" />
+      <mat-error *ngIf="customer.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Customer input--------------------------- -->
+
+    <!-- start Runner Weight input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Runner Weight
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Runner Weight"
+        [formControl]="runnerWeight"
+      />
+      <mat-error *ngIf="runnerWeight.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Runner Weight input--------------------------- -->
+
+    <!-- start Tool Shots input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Tool Shots
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Tool Shots"
+        [formControl]="toolShots"
+      />
+      <mat-error *ngIf="toolShots.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Tool Shots input--------------------------- -->
+
+    <!-- start Tool Lifetime Maximum Shots input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Tool Lifetime Maximum Shots
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Tool Lifetime Maximum Shots"
+        [formControl]="toolLifetimeMaximumShots"
+      />
+      <mat-error *ngIf="toolLifetimeMaximumShots.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Tool Lifetime Maximum Shots input--------------------------- -->
+
+    <!-- start Tool Manufactured Date input--------------------------- -->
+    <mat-form-field class="col col-md-6 h-25" appearance="outline">
+      <mat-label
+        >Tool Manufactured Date
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Tool Manufactured Date"
+        [formControl]="toolManufacturedDate"
+      />
+      <mat-error *ngIf="toolManufacturedDate.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Tool Manufactured Date input--------------------------- -->
+
+    <!-- start Comment input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Comment
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <textarea
+        matInput
+        placeholder="Enter Comment"
+        [formControl]="comment"
+      ></textarea>
+      <mat-error *ngIf="comment.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Comment input--------------------------- -->
+
+    <!-- start buttons-------------------------------------------- -->
+    <div class="d-flex justify-content-end gap-2">
+      <!-- <app-reuseable-form-cancel-button></app-reuseable-form-cancel-button>
+      <app-reuseable-form-add-button></app-reuseable-form-add-button> -->
+    </div>
+    <!-- end buttons-------------------------------------------- -->
+  </form>
+</div>

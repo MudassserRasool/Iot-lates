@@ -1,0 +1,231 @@
+<div class="conatiner d-flex flex-column gap-4">
+  <!-- start table----------------------------------------- -->
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772"
+      >
+        <div class="tableHeaderFont">Maintenance Job ID</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.position }}
+      </td>
+    </ng-container>
+
+    <!-- equipment Column -->
+    <ng-container matColumnDef="equipment">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Tool/ Equipment</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.equipment }}
+      </td>
+    </ng-container>
+
+    <!-- Weight discription -->
+    <!-- <ng-container matColumnDef="discription">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Tool Description</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.discription }}
+      </td>
+    </ng-container> -->
+
+    <!-- department Column -->
+    <ng-container matColumnDef="department">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Department</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.department }}
+      </td>
+    </ng-container>
+
+    <!-- title Column -->
+    <ng-container matColumnDef="title">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Title</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.title }}
+      </td>
+    </ng-container>
+
+    <!-- status Column -->
+    <ng-container matColumnDef="status">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Status</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        <div *ngIf="element.status === 'Not Started'" class="notStartedBox">
+          <div class="notStartedText">Not Started</div>
+        </div>
+        <div *ngIf="element.status === 'Stopped'" class="stoppedBox">
+          <div class="stoppedText">Stopped</div>
+        </div>
+        <div *ngIf="element.status === 'Running'" class="runningBox">
+          <div class="runningText">Running</div>
+        </div>
+      </td>
+    </ng-container>
+
+    <!-- priorty Column -->
+    <ng-container matColumnDef="priorty">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Priorty</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.priorty }}
+      </td>
+    </ng-container>
+
+    <!-- assignedTo Column -->
+    <ng-container matColumnDef="assignedTo">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Assigned To</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.assignedTo }}
+      </td>
+    </ng-container>
+
+    <!-- reportedBy Column -->
+    <ng-container matColumnDef="reportedBy">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Reported By</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.reportedBy }}
+      </td>
+    </ng-container>
+
+    <!-- runable Column -->
+    <ng-container matColumnDef="runable">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Runnable</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.runable }}
+      </td>
+    </ng-container>
+
+    <!-- creationDate Column -->
+    <ng-container matColumnDef="creationDate">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Created Date</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.creationDate }}
+      </td>
+    </ng-container>
+
+    <!-- dueBy Column -->
+    <ng-container matColumnDef="dueBy">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        style="background-color: #1e2772; color: white"
+      >
+        <div class="tableHeaderFont">Due By</div>
+      </th>
+      <td mat-cell *matCellDef="let element" class="tableDataFont">
+        {{ element.dueBy }}
+      </td>
+    </ng-container>
+
+    <!-- Actions Column -->
+    <ng-container matColumnDef="actions">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        style="background-color: #1e2772; color: white"
+      ></th>
+      <td mat-cell *matCellDef="let element" class="d-flex py-4">
+        <!-- Upload Button -->
+        <button mat-icon-button (click)="uploadItem(element)">
+          <img
+            src="../../../assets/uploadTableDataIcon.png"
+            alt="uploadTableDataIcon"
+          />
+        </button>
+
+        <!-- Edit Button -->
+        <button mat-icon-button (click)="editItem(element)">
+          <img
+            src="../../../assets/editTableDataIcon.png"
+            alt="editTableDataIcon"
+          />
+        </button>
+
+        <!-- View Button -->
+        <button mat-icon-button (click)="viewItem(element)">
+          <img
+            src="../../../assets/viewTableDataIcon.png"
+            alt="viewTableDataIcon"
+          />
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <!-- end table----------------------------------------- -->
+</div>
