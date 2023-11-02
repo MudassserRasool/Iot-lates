@@ -90,4 +90,20 @@ export class EquipmentEfficiencySpeedAvalibilityComponent implements OnInit {
       size: 170,
     },
   ];
+  equipmentEfficiencyGaugeCardDataTwo = [
+    {
+      titel: 'OEE',
+      value: 61,
+      behaviour: '',
+      size: 170,
+    },
+  ];
+  equipmentEfficiencyGaugeCardDataThree = [
+    {
+      titel: 'OEE',
+      value: 81,
+      behaviour: '',
+      size: 170,
+    },
+  ];
 }

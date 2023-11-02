@@ -96,9 +96,10 @@
     *ngIf="selectedView === 'Grid'"
     class="d-flex flex-wrap justify-content-between align-items-center gap-4"
   >
+
     <div
-      *ngFor="let _ of [1, 2,3,4,5,6]; let i = index"
-      class="d-flex mb-3 gap-2 card-container"
+    *ngFor="let _ of [1, 2]; let i = index"
+    class="d-flex mb-3 gap-2 card-container"
     >
       <div class="colorFullBar bg-danger"></div>
 
@@ -129,6 +130,248 @@
 
         <div class="row">
           <ng-container *ngFor="let item of equipmentEfficiencyGaugeCardData">
+            <div class="col">
+              <div
+                class="d-flex justify-content-between align-items-start mt-3"
+              >
+                <div class="graphTitel">Shift Performance</div>
+                <div class="">
+                  <div class="graphAmount">
+                    Actual : <span class="graphAmount">123</span>
+                  </div>
+                  <div class="graphAmount">
+                    Target : <span class="graphAmount">123</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gaugeCardBody ml-3">
+                <app-gauge-graph-card
+                  [summeryGaugeCardData]="item"
+                ></app-gauge-graph-card>
+              </div>
+
+
+              <div class="">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Current Shift Performance</div>
+              </div>
+              <div class="mt-2">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Previous Shift Performance</div>
+              </div>
+            </div>
+            <div class="mx-1">
+              <div class="verticalBars mx-auto"></div>
+            </div>
+            <div class="col">
+              <div class="graphTitel my-3">Shift Availability</div>
+              <div class="gaugeCardBody ml-3">
+                <app-gauge-graph-card
+                  [summeryGaugeCardData]="item"
+                ></app-gauge-graph-card>
+              </div>
+
+
+              <div class="">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Current Shift Performance</div>
+              </div>
+              <div class="mt-2">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Previous Shift Performance</div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+        <!-- <div class="mt-4">
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="progressbarInfo">322L GARDEN ST</div>
+              <div class="progressbarInfo">322L GARDEN ST</div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+
+
+    <div
+    *ngFor="let _ of [1, 2]; let i = index"
+    class="d-flex mb-3 gap-2 card-container"
+    >
+      <div class="colorFullBar bg-danger"></div>
+
+      <div class="energyCostOverviewCard d-flex flex-column gap-4">
+        <!-- start first row------------------------------------ -->
+        <div class="d-flex justify-content-between align-items-start mx-2 mt-1">
+          <div class="d-flex flex-column align-items-start gap-2">
+            <div class="d-flex gap-2">
+              <div class="settingIconBg">
+                <img
+                  src="../../../../assets/settingIcon.png"
+                  alt="unable to load icon"
+                  class="settingIcon"
+                />
+              </div>
+              <div class="mainHeading ml-1">Oven</div>
+            </div>
+            <div class="energyInfo">
+              3h, 9m. <span class="text-danger">Powered of</span>
+            </div>
+            <div class="energyInfo">Auto close: True</div>
+          </div>
+          <div>
+            <mat-icon class="material-symbols-outlined">more_vert</mat-icon>
+          </div>
+        </div>
+        <!-- end first row------------------------------------ -->
+
+        <div class="row">
+          <ng-container *ngFor="let item of equipmentEfficiencyGaugeCardDataThree">
+            <div class="col">
+              <div
+                class="d-flex justify-content-between align-items-start mt-3"
+              >
+                <div class="graphTitel">Shift Performance</div>
+                <div class="">
+                  <div class="graphAmount">
+                    Actual : <span class="graphAmount">123</span>
+                  </div>
+                  <div class="graphAmount">
+                    Target : <span class="graphAmount">123</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gaugeCardBody ml-3">
+                <app-gauge-graph-card
+                  [summeryGaugeCardData]="item"
+                ></app-gauge-graph-card>
+              </div>
+
+
+              <div class="">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Current Shift Performance</div>
+              </div>
+              <div class="mt-2">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Previous Shift Performance</div>
+              </div>
+            </div>
+            <div class="mx-1">
+              <div class="verticalBars mx-auto"></div>
+            </div>
+            <div class="col">
+              <div class="graphTitel my-3">Shift Availability</div>
+              <div class="gaugeCardBody ml-3">
+                <app-gauge-graph-card
+                  [summeryGaugeCardData]="item"
+                ></app-gauge-graph-card>
+              </div>
+
+
+              <div class="">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Current Shift Performance</div>
+              </div>
+              <div class="mt-2">
+                <div class="d-flex justify-content-end mt-2">
+                  <div class="progressbarInfo">0%</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                ></mat-progress-bar>
+                <div class="progressbarInfo mt-2">Previous Shift Performance</div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+        <!-- <div class="mt-4">
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="progressbarInfo">322L GARDEN ST</div>
+              <div class="progressbarInfo">322L GARDEN ST</div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+    <div
+    *ngFor="let _ of [1, 2]; let i = index"
+    class="d-flex mb-3 gap-2 card-container"
+    >
+      <div class="colorFullBar bg-danger"></div>
+
+      <div class="energyCostOverviewCard d-flex flex-column gap-4">
+        <!-- start first row------------------------------------ -->
+        <div class="d-flex justify-content-between align-items-start mx-2 mt-1">
+          <div class="d-flex flex-column align-items-start gap-2">
+            <div class="d-flex gap-2">
+              <div class="settingIconBg">
+                <img
+                  src="../../../../assets/settingIcon.png"
+                  alt="unable to load icon"
+                  class="settingIcon"
+                />
+              </div>
+              <div class="mainHeading ml-1">Oven</div>
+            </div>
+            <div class="energyInfo">
+              3h, 9m. <span class="text-danger">Powered of</span>
+            </div>
+            <div class="energyInfo">Auto close: True</div>
+          </div>
+          <div>
+            <mat-icon class="material-symbols-outlined">more_vert</mat-icon>
+          </div>
+        </div>
+        <!-- end first row------------------------------------ -->
+
+        <div class="row">
+          <ng-container *ngFor="let item of equipmentEfficiencyGaugeCardDataTwo">
             <div class="col">
               <div
                 class="d-flex justify-content-between align-items-start mt-3"
