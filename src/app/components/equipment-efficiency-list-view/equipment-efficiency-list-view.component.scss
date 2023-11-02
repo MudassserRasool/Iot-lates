@@ -1,0 +1,77 @@
+.tableContainer {
+  font-family: "Google Sans";
+}
+.tableHeader {
+  color: #347ae2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: rgb(75, 75, 122);
+}
+.tableData {
+    padding: 10px;
+}
+
+.equipmentMainHeading {
+  color: #1a1736;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.equipmentTime {
+  color: #1a1736;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.12px;
+}
+.equipmentPowerStatus {
+  color: #ed4e3d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.12px;
+}
+
+
+// job styling-----------------
+.upperBoldHeading{
+    color: #1A1736;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+.simpleInfoText{
+    color: #1A1736;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.12px;
+}
+.progressAmount{
+    color: #1A1736;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.12px;
+}
+
+
+.tableContainer {
+  font-family: "Google Sans";
+  overflow-x: auto; /* Add horizontal scrollbar when table overflows */
+  max-width: 100%; /* Ensure the table doesn't expand beyond the screen width */
+}
+
+.tableWrapper {
+  width: 100%; /* Make the wrapper take the full width of the container */
+}

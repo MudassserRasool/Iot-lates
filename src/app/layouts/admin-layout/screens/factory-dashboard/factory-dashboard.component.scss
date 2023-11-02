@@ -88,3 +88,72 @@
   line-height: normal;
 }
 
+
+
+
+//  GUAGE GRAH CARD
+
+.gaugeCardBody {
+  width: 240px;
+  height: 130px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.selector {
+  width: 68px;
+  height: 27px;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  border: 0.5px solid #d5d6da;
+  background-color: #fff;
+}
+
+.headingOfCard {
+  color: #1e2772;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.percentageValue {
+  color: #e21d1d;
+  font-family: "Google Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.percentageSign {
+  color: #e21d1d;
+  font-family: "Google Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
+.hungeryMachineContainer {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 4px 10px 5px 13px;
+}
+
+.hungeryMachineText {
+  color: #1a1736;
+  font-family: "Google Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

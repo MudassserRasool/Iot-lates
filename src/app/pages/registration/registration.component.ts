@@ -9,22 +9,14 @@ import { FormGroup, FormControl, Validators, AbstractControl} from '@angular/for
 })
 export class RegistrationComponent {
 
-  // separateDialCode = false;
-  // SearchCountryField = SearchCountryField;
-  // CountryISO = CountryISO;
-  // PhoneNumberFormat = PhoneNumberFormat;
-  // preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
-  // phoneForm = new FormGroup({
-  //   phone: new FormControl(undefined, [Validators.required])
-  // });
 
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   fullNameFormControl = new FormControl('', [Validators.required]);
+  contactNumberFormControl = new FormControl(null, [Validators.required]);
+  jobTitleFormControl = new FormControl('', [Validators.required]);
+  departmentFormControl = new FormControl('', [Validators.required]);
   termsAndConditionsFormControl = new FormControl(false, [Validators.requiredTrue]);
   privacyPolicyFormControl = new FormControl(false, [Validators.requiredTrue]);
-
-  // phoneNumberFormat = PhoneNumberFormat.National;
-  // selectedCountryISO = CountryISO.India;
 
   hidePassword = true;
   errorMessage = '';
@@ -63,6 +55,9 @@ export class RegistrationComponent {
       this.passwordFormControl.invalid ||
       this.confirmPasswordFormControl.invalid ||
       this.fullNameFormControl.invalid ||
+      this.contactNumberFormControl.invalid ||
+      this.jobTitleFormControl.invalid ||
+      this.departmentFormControl.invalid ||
       this.termsAndConditionsFormControl.invalid ||
       this.privacyPolicyFormControl.invalid ||
       this.passwordsDoNotMatch

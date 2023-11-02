@@ -43,29 +43,52 @@
                     Email is <strong>required</strong>
                   </mat-error>
                 </mat-form-field>
-                <!-- end email------------- -->
-                <!-- Phone Number Field -->
-                <!-- <form #f="ngForm" [formGroup]="phoneForm" class="example-full-width ">
-                                    <div class="wrapper">
-                                        <ngx-intl-tel-input [cssClass]="'custom'"
-                                            [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="true"
-                                            [enablePlaceholder]="true" [searchCountryFlag]="true" [searchCountryField]="[
-          SearchCountryField.Iso2,
-          SearchCountryField.Name
-        ]" [selectFirstCountry]="false" [selectedCountryISO]="CountryISO.India" [maxLength]="15"
-                                            [phoneValidation]="true" [separateDialCode]="separateDialCode"
-                                            [numberFormat]="PhoneNumberForm1at.National" name="phone"
-                                            formControlName="phone">
-                                        </ngx-intl-tel-input>
-                                    </div> -->
-                <!-- <div class="wrapper">
-      <button (click)="f.reset()">Reset</button>
-    </div> -->
-                <!-- </form> -->
+                
 
-                <!-- start passward-------------- -->
-                <!-- Password Field -->
-                <!-- Password Field -->
+                 <!-- Full Contact number Field -->
+                 <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Contact No</mat-label>
+                  <input
+                    matInput
+                    [formControl]="contactNumberFormControl"
+                    placeholder="000 000 000"
+                  />
+                  <mat-error *ngIf="contactNumberFormControl.hasError('required')">
+                    Full Name is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+                <!-- end Contact number Field------------- -->
+
+                 <!-- Full Job Title Field -->
+                 <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Job Title</mat-label>
+                  <input
+                    matInput
+                    [formControl]="jobTitleFormControl"
+                    placeholder="Type your tilte"
+                  />
+                  <mat-error *ngIf="jobTitleFormControl.hasError('required')">
+                    Full Name is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+                <!-- end Job Title Field------------- -->
+
+                 <!-- Full Department Field -->
+                 <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Department</mat-label>
+                  <input
+                    matInput
+                    [formControl]="departmentFormControl"
+                    placeholder="Your Dempartment?"
+                  />
+                  <mat-error *ngIf="departmentFormControl.hasError('required')">
+                    Full Name is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+                <!-- end Department Field------------- -->
+
+
+
                 <!-- Password Field -->
                 <mat-form-field class="example-full-width" appearance="outline">
                   <mat-label>Password</mat-label>
@@ -172,14 +195,7 @@
                 </div>
 
                 <!-- <div class=""> -->
-                <!-- start red error--------------- -->
-                <!-- <div class="d-flex gap-2">
-        <img src="../../../assets/CrossIcon.png" alt="unable to load">
-        <p class="errorText">At least 8 characters</p>
-    </div> -->
-                <!-- end red error--------------- -->
-
-                <!-- </div> -->
+               
 
                 <!-- Confirm Password Field -->
                 <mat-form-field class="example-full-width" appearance="outline">
@@ -212,11 +228,11 @@
                 </div>
 
                 <!-- Privacy Policy Checkbox -->
-                <div class="d-flex align-items-center">
+                <!-- <div class="d-flex align-items-center">
                   <mat-checkbox [formControl]="privacyPolicyFormControl">
                     Yes, I have read and agree to Privacy Policy
                   </mat-checkbox>
-                </div>
+                </div> -->
 
                 <!-- END CHECKBOX------------  -->
 

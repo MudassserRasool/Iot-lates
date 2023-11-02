@@ -15,10 +15,12 @@ import Chart from 'chart.js/auto';
 export class FactoryDashboardComponent  implements OnInit, AfterViewInit {
  // start simple card-----------------------------------------------
  simpleCardData = [
+  
   {
     title: 'Total Machine',
     amount: 15,
     img: '../../../assets/greenFactoryIcon.png',
+    
   },
   {
     title: 'Total Line',
@@ -44,21 +46,25 @@ gaugeCardData = [
     titel: 'OEE',
     value: 30,
     behaviour: 'Unsatisfactory',
+     size:110
   },
   {
     titel: 'Availability',
     value: 55,
     behaviour: 'Satisfactory',
+     size:110
   },
   {
     titel: 'Performance',
     value: 78,
     behaviour: 'Expected',
+     size:110
   },
   {
     titel: 'Quality',
     value: 60,
     behaviour: 'Satisfactory',
+     size:110
   },
 ];
 // end guage graph --------------------------

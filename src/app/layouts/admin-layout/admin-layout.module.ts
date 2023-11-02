@@ -33,6 +33,14 @@ import { FactoryDashboardComponent } from './screens/factory-dashboard/factory-d
 import { TestingComponent } from './testing/testing.component';
 import { CurrentShiftComponent } from './screens/current-shift/current-shift.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatIconModule } from '@angular/material/icon';
+import { EquipmentEfficiencyListViewComponent } from 'src/app/components/equipment-efficiency-list-view/equipment-efficiency-list-view.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { StackedBarChartComponent } from './screens/stacked-bar-chart/stacked-bar-chart.component';
+import { GaugeNeedleGraphComponent } from 'src/app/components/gauge-needle-graph/gauge-needle-graph.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+import { EquipmentEfficiencySpeedAvalibilityComponent } from './screens/equipment-efficiency-speed-avalibility/equipment-efficiency-speed-avalibility.component';
 @NgModule({
   declarations: [
     UserProfileComponent,
@@ -64,6 +72,11 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     EquipmentEfficiencyOvenCardComponent,
     SpeedAndAvailabilityComponent,
     CurrentShiftComponent,
+    EquipmentEfficiencyListViewComponent,
+    StackedBarChartComponent,
+
+    GaugeNeedleGraphComponent,
+     EquipmentEfficiencySpeedAvalibilityComponent
   ],
   imports: [
     CommonModule,
@@ -81,6 +94,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     NgbModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatTableModule,
+    FusionChartsModule,
   ],
 })
 export class AdminLayoutModule {}

@@ -1,0 +1,244 @@
+<div class="mat-elevation-z8 tableContainer">
+
+  <div class="tableContainer">
+    <div class="tableWrapper">
+      <table mat-table [dataSource]="dataSource">
+        <!-- Equipment  -->
+        <ng-container matColumnDef="equipment">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Equipment
+          </th>
+          <td
+            mat-cell
+            *matCellDef="let element"
+            class="d-flex align-items-center tableData"
+          >
+            <!-- {{ element.equipment }} -->
+            <img [src]="element.equipment" alt="" />
+            <div class="ml-2">
+              <div class="equipmentMainHeading">Oven</div>
+              <div class="equipmentTime">
+                3h, 9m.<span class="equipmentPowerStatus">Powered off</span>
+              </div>
+            </div>
+          </td>
+        </ng-container>
+    
+        <!-- Job Information -->
+        <ng-container matColumnDef="jobInfo">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Job Information
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- {{ element.jobInfo }} -->
+            <div class="d-flex align-items-center justify-content-around">
+              <!-- start job id--------------------- -->
+              <div class="">
+                <div class="upperBoldHeading">00145</div>
+                <div class="simpleInfoText">Job ID</div>
+              </div>
+              <!-- end job id--------------------- -->
+    
+              <!-- start progressbar-------------------- -->
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="simpleInfoText">Total Number</div>
+                  <div class="progressAmount">7444</div>
+                </div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="40"
+                  class="mt-2"
+                ></mat-progress-bar>
+              </div>
+              <!-- start progressbar-------------------- -->
+            </div>
+          </td>
+        </ng-container>
+    
+        <!-- OEE -->
+        <ng-container matColumnDef="OEE">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            OEE
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <div class="upperBoldHeading">{{ element.OEE }}%</div>
+          </td>
+        </ng-container>
+    
+        <!-- Planned Completion -->
+        <ng-container matColumnDef="plannedCompletion">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Planned Completion
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- {{ element.plannedCompletion }} -->
+            <div class="ml-2">
+              <div class="upperBoldHeading">10/11/2023,</div>
+              <div class="simpleInfoText mt-1">11:44 PM</div>
+            </div>
+          </td>
+        </ng-container>
+    
+        <!-- Estimated Completion -->
+        <ng-container matColumnDef="estimatedCompletion">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Estimated Completion
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- {{ element.estimatedCompletion }} -->
+            <div class="ml-2">
+              <div class="upperBoldHeading">10/11/2023,</div>
+              <div class="simpleInfoText mt-1">11:44 PM</div>
+            </div>
+          </td>
+        </ng-container>
+    
+        <!-- Production -->
+        <ng-container matColumnDef="production">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Production
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- {{ element.production }} -->
+            <div class="ml-2">
+              <div class="upperBoldHeading">0 Production</div>
+              <div class="simpleInfoText mt-1">0 Rejection</div>
+            </div>
+          </td>
+        </ng-container>
+    
+        <!-- Previous Shift Availability -->
+        <ng-container matColumnDef="previousShiftAvailability">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Previous Shift Availability
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- {{ element.previousShiftAvailability }} -->
+            <mat-progress-bar
+              mode="determinate"
+              value="40"
+              class="w-75"
+            ></mat-progress-bar>
+            <div class="simpleInfoText mt-2">40%</div>
+          </td>
+        </ng-container>
+    
+        <!-- Current Shift Availability -->
+        <ng-container matColumnDef="currentShiftAvailability">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Current Shift Availability
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- {{ element.currentShiftAvailability }} -->
+            <mat-progress-bar
+              mode="determinate"
+              value="40"
+              class="w-75"
+            ></mat-progress-bar>
+            <div class="simpleInfoText mt-2">40%</div>
+          </td>
+        </ng-container>
+    
+        <!-- Performance -->
+        <ng-container matColumnDef="performance">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Performance
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <div class="upperBoldHeading">{{ element.performance }}%</div>
+          </td>
+        </ng-container>
+    
+        <!-- Quality -->
+        <ng-container matColumnDef="quality">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            Quality
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <div class="upperBoldHeading">{{ element.quality }}%</div>
+          </td>
+        </ng-container>
+    
+        <!-- edit buttons -->
+        <ng-container matColumnDef="edit">
+          <th
+            style="background-color: #f1f7ff"
+            class="tableHeader"
+            mat-header-cell
+            *matHeaderCellDef
+          >
+            
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableData">
+            <!-- <div class="upperBoldHeading">{{ element.quality }}%</div> -->
+            <mat-icon class="material-symbols-outlined">more_vert</mat-icon>
+          </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </div>
+  
+
+
+
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+</div>

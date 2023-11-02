@@ -4,6 +4,7 @@ import { EnergyComponent } from './screens/energy/energy.component';
 import { EquipmentEfficiencyComponent } from './screens/equipment-efficiency/equipment-efficiency.component';
 import { FactoryDashboardComponent } from './screens/factory-dashboard/factory-dashboard.component';
 import { CurrentShiftComponent } from './screens/current-shift/current-shift.component';
+import { EquipmentEfficiencySpeedAvalibilityComponent } from './screens/equipment-efficiency-speed-avalibility/equipment-efficiency-speed-avalibility.component';
 export const AdminLayoutRoutes: Routes = [
   // {
   //   path: '',
@@ -52,6 +53,10 @@ export const AdminLayoutRoutes: Routes = [
   {
     path: 'equipment-efficiency',
     component: EquipmentEfficiencyComponent, 
+  },
+  {
+    path: 'equipment-efficiency-speed-avalibility',
+    component: EquipmentEfficiencySpeedAvalibilityComponent, 
   },
 
   { path: 'energy', component: EnergyComponent },

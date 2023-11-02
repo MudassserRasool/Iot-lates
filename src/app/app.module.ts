@@ -30,10 +30,9 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { ComponentsModule } from './component/components.module';
 // import { EquipmentEfficiencyOvenCardComponent } from './components/equipment-efficiency-oven-card/equipment-efficiency-oven-card.component';
-import { JobCircleCardComponent } from './components/job-circle-card/job-circle-card.component';
-import { MachineInfoSimpleCardComponent } from './components/machine-info-simple-card/machine-info-simple-card.component';
+import { NgOtpInputModule } from 'ng-otp-input';
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { SimpleCardComponent } from './components/simple-card/simple-card.component';
-import { SpeedAndAvailabilityComponent } from './components/speed-and-availability/speed-and-availability.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AddNewFactoryAreaFormComponent } from './pages/Forms/add-new-factory-area-form/add-new-factory-area-form.component';
 import { AddNewGroupFormComponent } from './pages/Forms/add-new-group-form/add-new-group-form.component';
@@ -48,14 +47,14 @@ import { ForgetComponent } from './pages/forget/forget.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MaintenanceDetailsComponent } from './pages/maintenance-details/maintenance-details.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
-import { PhoneAuthenticationComponent } from './pages/two-step-authentication-forms/phone-authentication/phone-authentication.component';
 import { EmailAuthenticationComponent } from './pages/two-step-authentication-forms/email-authentication/email-authentication.component';
-import { PhoneOtpComponent } from './pages/two-step-authentication-forms/phone-otp/phone-otp.component';
 import { PhoneAuthenticationSuccessComponent } from './pages/two-step-authentication-forms/phone-authentication-success/phone-authentication-success.component';
-import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
-import { NgOtpInputModule } from 'ng-otp-input';
+import { PhoneAuthenticationComponent } from './pages/two-step-authentication-forms/phone-authentication/phone-authentication.component';
+import { PhoneOtpComponent } from './pages/two-step-authentication-forms/phone-otp/phone-otp.component';
 // import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 // import { NgApexchartsModule } from 'ng-apexcharts';
+import { MatTabsModule } from '@angular/material/tabs';
+// import { EquipmentEfficiencyListViewComponent } from './components/equipment-efficiency-list-view/equipment-efficiency-list-view.component';
 
 // import { NgxChartsModule } from '@swimlane/ngx-charts';
 @NgModule({
@@ -92,6 +91,7 @@ import { NgOtpInputModule } from 'ng-otp-input';
     EmailAuthenticationComponent,
     PhoneOtpComponent,
     PhoneAuthenticationSuccessComponent,
+    // GaugeNeedleGraphComponent,
   ],
   imports: [
     BrowserModule,
@@ -115,6 +115,7 @@ import { NgOtpInputModule } from 'ng-otp-input';
     // NgxIntlTelInputModule,
     NgxIntlTelInputModule,
     NgOtpInputModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

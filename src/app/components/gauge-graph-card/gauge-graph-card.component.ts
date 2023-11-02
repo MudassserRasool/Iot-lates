@@ -12,7 +12,7 @@ export class GaugeGraphCardComponent implements OnInit {
   minValue = 0;   // Set your minimum value here
   maxValue = 100; // Set your maximum value here
 
-  @Input() summeryGaugeCardData: { titel: string, value: number, behaviour: string } = { titel: "", value: 0, behaviour: '' };
+  @Input() summeryGaugeCardData: { titel: string, value: number, behaviour: string, size: number } = { titel: "", value: 0, behaviour: '', size:0 };
   thresholdConfig = {
     '0': { color: '#ED4E3D', label: 'unsatisfy' },  // red
     '50': { color: '#F2BF48', label: 'satisfy' },   // orange

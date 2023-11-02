@@ -110,10 +110,13 @@
 
 .energyCostOverviewCard {
   padding: 28px;
-  width: 320px !important;
+  width: 505px !important;
   // height: 275px;
 
-  border-radius: 10px;
+  border-top-left-radius: 1px !important;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
@@ -155,9 +158,9 @@
   // line-height: normal;
 }
 
-.verticalBar {
+.verticalBars {
   width: 1.5px;
-  height: 37px;
+  height: 100%;
   background-color: #efefef;
 }
 
@@ -338,36 +341,28 @@
 // .selectState {
 //   width: 193px;
 //   // background-color: white;
-//   
-  
+//
+
 //   padding-left: 42px !important;
 //   padding-bottom: 42px !important;
 //   border: none;
 //   border-radius: 5px;
 // }
 
-
-
 .selectState {
   width: 193px;
   padding: 5px; /* Add padding to the select element */
-  border:none; /* Add a border for better visibility */
+  border: none; /* Add a border for better visibility */
   border-radius: 5px;
   padding: 12px;
-
-
-
-
-
 }
 
 /* Style the options within the select element */
 .selectState option {
   background-color: white;
-  
 
-  color: #1A1736;
-  font-feature-settings: 'clig' off, 'liga' off;
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -378,6 +373,32 @@
 /* Style the select element when it's focused */
 .selectState:focus {
   outline: none; /* Remove the default focus outline */
-  border: 1px solid #09AEF9; /* Highlight the border when focused */
+  border: 1px solid #09aef9; /* Highlight the border when focused */
   box-shadow: 0 0 5px rgba(9, 174, 249, 0.5); /* Add a subtle shadow */
+}
+
+.graphTitel {
+  color: #1a1736;
+  font-family: "Google Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.graphAmountTitle{
+  color: #1A1736;
+  font-family: 'Google Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.graphAmount{
+  color: #1A1736;
+  font-family: 'Google Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
 }

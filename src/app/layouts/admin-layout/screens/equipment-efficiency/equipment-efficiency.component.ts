@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./equipment-efficiency.component.scss']
 })
 export class EquipmentEfficiencyComponent {
+  selectedView: 'Grid' | 'List' = 'Grid'; 
   overViewCardData = [
     {
       img: '../../../assets/numberOfMachineIcon.png',
