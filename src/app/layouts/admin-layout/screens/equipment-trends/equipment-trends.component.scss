@@ -1,0 +1,62 @@
+.graphCard {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  font-family: "Google Sans";
+}
+
+.graphTitel {
+  color: #1a1736;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.titel {
+  color: #1a1736;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.18px;
+}
+.details {
+  color: #1a1736;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+
+.selectStates {
+  width: 193px;
+  padding: 5px; /* Add padding to the select element */
+  border: none; /* Add a border for better visibility */
+  border-radius: 5px;
+  padding: 12px;
+}
+
+/* Style the options within the select element */
+.selectStates option {
+  background-color: white;
+
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.3px;
+}
+
+/* Style the select element when it's focused */
+.selectStates:focus {
+  outline: none; /* Remove the default focus outline */
+  border: 1px solid #09aef9; /* Highlight the border when focused */
+  box-shadow: 0 0 5px rgba(9, 174, 249, 0.5); /* Add a subtle shadow */
+}

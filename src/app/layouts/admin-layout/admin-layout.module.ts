@@ -41,6 +41,7 @@ import { StackedBarChartComponent } from './screens/stacked-bar-chart/stacked-ba
 import { GaugeNeedleGraphComponent } from 'src/app/components/gauge-needle-graph/gauge-needle-graph.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 import { EquipmentEfficiencySpeedAvalibilityComponent } from './screens/equipment-efficiency-speed-avalibility/equipment-efficiency-speed-avalibility.component';
+import { EquipmentTrendsComponent } from './screens/equipment-trends/equipment-trends.component';
 @NgModule({
   declarations: [
     UserProfileComponent,
@@ -76,7 +77,8 @@ import { EquipmentEfficiencySpeedAvalibilityComponent } from './screens/equipmen
     StackedBarChartComponent,
 
     GaugeNeedleGraphComponent,
-     EquipmentEfficiencySpeedAvalibilityComponent
+     EquipmentEfficiencySpeedAvalibilityComponent,
+     EquipmentTrendsComponent
   ],
   imports: [
     CommonModule,
