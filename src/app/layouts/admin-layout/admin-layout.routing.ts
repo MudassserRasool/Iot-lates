@@ -6,6 +6,7 @@ import { FactoryDashboardComponent } from './screens/factory-dashboard/factory-d
 import { CurrentShiftComponent } from './screens/current-shift/current-shift.component';
 import { EquipmentEfficiencySpeedAvalibilityComponent } from './screens/equipment-efficiency-speed-avalibility/equipment-efficiency-speed-avalibility.component';
 import { EquipmentTrendsComponent } from './screens/equipment-trends/equipment-trends.component';
+import { JobGanttChartViewComponent } from './screens/job-gantt-chart-view/job-gantt-chart-view.component';
 export const AdminLayoutRoutes: Routes = [
   // {
   //   path: '',
@@ -62,6 +63,10 @@ export const AdminLayoutRoutes: Routes = [
   {
     path: 'equipment-trends',
     component: EquipmentTrendsComponent, 
+  },
+  {
+    path: 'job-gantt-chart-view',
+    component: JobGanttChartViewComponent, 
   },
 
   { path: 'energy', component: EnergyComponent },

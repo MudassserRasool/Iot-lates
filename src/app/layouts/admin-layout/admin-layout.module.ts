@@ -21,27 +21,40 @@ import { SelectMonthComponent } from 'src/app/components/select-month/select-mon
 import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
 // import { AddNewEquipmentComponent } from './add-new-equipment/add-new-equipment.component';
 // import { AddNewFactoryFormComponent } from './add-new-factory-form/add-new-factory-form.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+import { FusionChartsModule } from 'angular-fusioncharts';
+import { EquipmentEfficiencyListViewComponent } from 'src/app/components/equipment-efficiency-list-view/equipment-efficiency-list-view.component';
 import { EquipmentEfficiencyOvenCardComponent } from 'src/app/components/equipment-efficiency-oven-card/equipment-efficiency-oven-card.component';
+import { GaugeNeedleGraphComponent } from 'src/app/components/gauge-needle-graph/gauge-needle-graph.component';
 import { JobCircleCardComponent } from 'src/app/components/job-circle-card/job-circle-card.component';
 import { SpeedAndAvailabilityComponent } from 'src/app/components/speed-and-availability/speed-and-availability.component';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 import { HelloComponent } from './hello/hello.component';
-import { EnergyComponent } from './screens/energy/energy.component';
-import { EquipmentEfficiencyComponent } from './screens/equipment-efficiency/equipment-efficiency.component';
-import { FactoryDashboardComponent } from './screens/factory-dashboard/factory-dashboard.component';
-import { TestingComponent } from './testing/testing.component';
 import { CurrentShiftComponent } from './screens/current-shift/current-shift.component';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import { MatIconModule } from '@angular/material/icon';
-import { EquipmentEfficiencyListViewComponent } from 'src/app/components/equipment-efficiency-list-view/equipment-efficiency-list-view.component';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatTableModule } from '@angular/material/table';
-import { StackedBarChartComponent } from './screens/stacked-bar-chart/stacked-bar-chart.component';
-import { GaugeNeedleGraphComponent } from 'src/app/components/gauge-needle-graph/gauge-needle-graph.component';
-import { FusionChartsModule } from 'angular-fusioncharts';
+import { EnergyComponent } from './screens/energy/energy.component';
 import { EquipmentEfficiencySpeedAvalibilityComponent } from './screens/equipment-efficiency-speed-avalibility/equipment-efficiency-speed-avalibility.component';
+import { EquipmentEfficiencyComponent } from './screens/equipment-efficiency/equipment-efficiency.component';
 import { EquipmentTrendsComponent } from './screens/equipment-trends/equipment-trends.component';
+import { FactoryDashboardComponent } from './screens/factory-dashboard/factory-dashboard.component';
+import { JobGanttChartViewComponent } from './screens/job-gantt-chart-view/job-gantt-chart-view.component';
+import { StackedBarChartComponent } from './screens/stacked-bar-chart/stacked-bar-chart.component';
+import { TestingComponent } from './testing/testing.component';
+
+// import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+
+import { NgApexchartsModule } from 'ng-apexcharts';
+
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+// import { BrowserModule } from '@angular/platform-browser';
+// import the GanttModule for the Gantt component
+// import { GanttChartModule } from '@smart-webcomponents-angular/ganttchart';
+// import GanttChartMo
+// import { GanttComponent, EditService , FilterService, SortService, SelectionService, ToolbarService,DayMarkersService } from '@syncfusion/ej2-angular-gantt';
+import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 @NgModule({
   declarations: [
     UserProfileComponent,
@@ -77,8 +90,9 @@ import { EquipmentTrendsComponent } from './screens/equipment-trends/equipment-t
     StackedBarChartComponent,
 
     GaugeNeedleGraphComponent,
-     EquipmentEfficiencySpeedAvalibilityComponent,
-     EquipmentTrendsComponent
+    EquipmentEfficiencySpeedAvalibilityComponent,
+    EquipmentTrendsComponent,
+    JobGanttChartViewComponent,
   ],
   imports: [
     CommonModule,
@@ -100,6 +114,16 @@ import { EquipmentTrendsComponent } from './screens/equipment-trends/equipment-t
     MatPaginatorModule,
     MatTableModule,
     FusionChartsModule,
+    // GanttModule,
+    GanttModule,
+    // BrowserModule,
+    // BrowserModule,
+    // GanttChartModule,
+
+    // GanttModule,
+    NgApexchartsModule,
   ],
+  // providers: [ EditService , FilterService, SortService, SelectionService,ToolbarService,DayMarkersService ]
+  providers: [ToolbarService, EditService, SelectionService]
 })
 export class AdminLayoutModule {}

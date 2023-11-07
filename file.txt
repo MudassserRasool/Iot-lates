@@ -1,0 +1,201 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-job-gantt-chart-view',
+  templateUrl: './job-gantt-chart-view.component.html',
+  styleUrls: ['./job-gantt-chart-view.component.scss'],
+})
+export class JobGanttChartViewComponent {
+  selectedView: 'Grid' | 'List' = 'Grid';
+
+  tasks = [
+    { name: 'Task 1', start: 0, end: 5 },
+    { name: 'Task 2', start: 0, end: 8 },
+    { name: 'Task 3', start: 0, end: 10 },
+    { name: 'Task 1', start: 0, end: 5 },
+    { name: 'Task 2', start: 0, end: 8 },
+    { name: 'Task 3', start: 0, end: 10 },
+    { name: 'Task 1', start: 0, end: 5 },
+    { name: 'Task 2', start: 0, end: 8 },
+    { name: 'Task 3', start: 0, end: 10 },
+    { name: 'Task 1', start: 0, end: 5 },
+    { name: 'Task 2', start: 0, end: 8 },
+    { name: 'Task 3', start: 0, end: 10 },
+  ];
+
+  deleteTask(index: number) {
+    if (index >= 0 && index < this.tasks.length) {
+      this.tasks.splice(index, 1);
+    }
+  }
+}
+
+
+
+
+<div class="conatiner equipmentContainer d-flex flex-column gap-4">
+  <!-- start equipment eficency row-------------------------------------- -->
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center gap-2"
+  >
+    <div
+      *ngFor="let _ of [1, 2, 3, 4, 5]; let i = index"
+      class="energyOverviewCard"
+    >
+      <div class="d-flex flex-column gap-3 align-items-center">
+        <div class="energyTitel">Energy Title {{ i + 1 }}</div>
+        <div class="energyCost">
+          <span class="energyCostCurrency"></span> {{ i + 1 }}
+        </div>
+      </div>
+      <!-- <div class="bottomColorBar" [style.background-color]="energyCostData[i].color"></div> -->
+    </div>
+  </div>
+  <!-- end equipment eficency row-------------------------------------- -->
+
+  <!-- Add the toggle buttons -->
+  <div class="d-flex justify-content-between my-4">
+    <div class="d-flex flex-column">
+      <div class="d-flex align-items-center gap-2">
+        <div class="blueButtonBox">
+          <div class="blueButtonText">Job Dashboard</div>
+        </div>
+        <div class="allGroupBox ml-3">
+          <div class="allGroupText">All Group</div>
+        </div>
+        <select name="cars" class="selectState ml-3">
+          <option value="volvo">All State</option>
+          <option value="down">down</option>
+          <option value="run">run</option>
+          <option value="slow">slow</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column">
+      <div class="d-flex align-items-center gap-2">
+        <div
+          class="IconBox"
+          [style.opacity]="selectedView !== 'List' ? 0.5 : 1"
+        >
+          <mat-icon
+            class="icon"
+            [class.selected]="selectedView === 'List'"
+            (click)="selectedView = 'List'"
+          >
+            format_list_bulleted
+          </mat-icon>
+        </div>
+
+        <div
+          class="IconBox ml-2"
+          [style.opacity]="selectedView !== 'Grid' ? 0.5 : 1"
+        >
+          <mat-icon
+            class="icon"
+            [class.selected]="selectedView === 'Grid'"
+            (click)="selectedView = 'Grid'"
+          >
+            grid_view
+          </mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start grid view============================================================================== -->
+  <div
+    *ngIf="selectedView === 'Grid'"
+    class="d-flex flex-wrap justify-content-between align-items-center gap-4"
+  >
+    <!-- create angular gang chart -->
+
+    <div class="container-fluid col bg-white rounded">
+      <!-- <div class="col-2">dsfsdf</div> -->
+      <table class="bg-white p-4 ml-auto" style="width: 82%;">
+        <thead>
+          <tr class="ml-2">
+            <th colspan="4" class="mx-auto">Header 1</th>
+            <th colspan="4" class="mx-auto">Header 2</th>
+            <th colspan="4" class="mx-auto">Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Add table body rows here -->
+          <tr class="ml-2">
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+            <td>Data 10</td>
+            <td>Data 11</td>
+            <td>Data 12</td>
+          </tr>
+          <!-- Add more table body rows as needed -->
+        </tbody>
+      </table>
+
+      <div class="d-flex bg-white p-4 w-100 ml-auto">
+        <div class="col-2 jsutify-content-center bg-white mt-2">
+          <tr *ngFor="let task of tasks; let i = index">
+            <!-- <td class="jsutify-content-center"> -->
+            <button style="margin-top: 2px" (click)="deleteTask(i)">Delete</button>
+            <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+            (click)="deleteTask(i)"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg> -->
+            <!-- </td> -->
+          </tr>
+        </div>
+        <svg width="100%" height="300">
+          <g *ngFor="let task of tasks; let i = index">
+            <!-- Add a delete button to the left of the task -->
+            <!-- <text [attr.x]="task.start * 80 - 25" [attr.y]="i * 30 + 15" style="fill: red; cursor: pointer; ">
+        <a (click)="deleteTask(i)">Delete</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+          <path d="M4.5 1a.5.5 0 0 0-.5.5V2h-.5a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-.5V1.5a.5.5 0 0 0-1 0V2H5a.5.5 0 0 0-.5-.5zM1.5 4.5a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V13a.5.5 0 0 0-.5-.5h-12a.5.5 0 0 0-.5.5V4.5z"/>
+          <path fill-rule="evenodd" d="M11 14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v7.5a.5.5 0 0 0 .5.5zM8 14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v7.5a.5.5 0 0 0 .5.5zM5 14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v7.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+      </text> -->
+
+            <!-- Task bar and text -->
+            <rect
+              [attr.x]="task.start * 80"
+              [attr.y]="i * 30"
+              [attr.width]="(task.end - task.start) * 80"
+              height="20"
+              style="fill: rgb(70, 180, 76)"
+            />
+            <!-- <rect [attr.x]="task.start * 80" [attr.y]="i * 30" [attr.width]="(task.end - task.start) * 80" height="20" style="fill: rgb(70, 180, 76)" /> -->
+            <text
+              [attr.x]="task.start * 80"
+              [attr.y]="i * 30 + 15"
+              style="fill: white"
+            >
+              {{ task.name }}
+            </text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- <div #chartdiv style="width: 100%; height: 400px;"></div> -->
+  </div>
+  <!-- end grid view============================================================================== -->
+
+  <!-- start list view=======================List=============================================================== -->
+  <div *ngIf="selectedView === 'List'">List View</div>
+  <!-- end list view====================================================================================== -->
+</div>
