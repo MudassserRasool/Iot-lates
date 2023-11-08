@@ -2,7 +2,7 @@
   <!-- start machine state-------------------------------------- -->
   <div class="d-flex gap-5 justify-content-between align-items-start">
     <div class="col col-md-6 machineInfoMainLeftCard">
-      <div class="d-flex flex-wrap justify-content-between gap-2">
+      <div class="d-flex flex-wrap justify-content-between gap-2 p-2">
         <!-- start card---------------------------------- -->
         <ng-container *ngFor="let item of simpleCardData">
           <app-machine-info-simple-card
@@ -19,8 +19,8 @@
         <!-- start card---------------------------------- -->
         <ng-container *ngFor="let item of gaugeCardData">
           <div class="gaugeCardBody">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex flex-column justify-content-between gap-2">
+            <div class="d-flex justify-content-between align-items-center  ">
+              <div class="d-flex flex-column justify-content-between gap-2 mb-2">
                 <div class="headingOfCard">{{ item.titel }}</div>
                 <div class="percentageValue">
                   20<span class="percentageSign">%</span>
@@ -28,9 +28,11 @@
               </div>
 
               <!-- start gauge graph---------------------------------------->
-              <app-gauge-graph-card
-                [summeryGaugeCardData]="item"
-              ></app-gauge-graph-card>
+              <div class="mt-1">
+                <app-gauge-graph-card
+                  [summeryGaugeCardData]="item"
+                ></app-gauge-graph-card>
+              </div>
               <!-- end gauge graph---------------------------------------->
             </div>
           </div>
@@ -59,7 +61,7 @@
     <div class="col col-md-6">
       <div class="d-flex gap-2 justify-content-between">
         <!-- start job kp card---------------------------  -->
-        <div class="d-flex flex-column jobCard p-3">
+        <div class="d-flex flex-column jobCard p-3 mx-auto justify-content-between  ">
           <div class="cardTitel">Jobs KPI Details</div>
           <div
             class="d-flex flex-column justify-content-between mt-2 mx-2 gap-2"
@@ -74,10 +76,10 @@
         <!-- end job kp card---------------------------  -->
 
         <!-- start job maintaince card---------------------  -->
-        <div class="d-flex flex-column jobCard p-3 ms-1">
+        <div class="d-flex flex-column jobCard p-3 mx-auto justify-content-between">
           <div class="cardTitel">Jobs Maintenance</div>
           <div
-            class="d-flex flex-column justify-content-between mt-2 mx-2 gap-2"
+            class="d-flex flex-column justify-content-between mt-3 mx-2 gap-2"
           >
             <!-- start inner card---------------------  -->
             <ng-container *ngFor="let item of gaugeCardJobMaintainceData">
@@ -95,7 +97,7 @@
 
   <!-- start energy avalibility graph------------------------------  -->
   <div class="d-flex gap-5 justify-content-between align-items-center mt-4">
-    <div class="col col-md-3 cardBody p-3 gap-5" style="height: 292px">
+    <div class="col col-md-3 cardBody p-4 gap-5" >
       <div class="reportHeading">Analysis Report</div>
 
       <div class="d-flex justify-content-between align-items-center mt-3">

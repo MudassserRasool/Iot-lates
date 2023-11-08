@@ -46,25 +46,25 @@ gaugeCardData = [
     titel: 'OEE',
     value: 30,
     behaviour: 'Unsatisfactory',
-     size:110
+     size:130
   },
   {
     titel: 'Availability',
     value: 55,
     behaviour: 'Satisfactory',
-     size:110
+     size:130
   },
   {
     titel: 'Performance',
     value: 78,
     behaviour: 'Expected',
-     size:110
+     size:130
   },
   {
     titel: 'Quality',
     value: 60,
     behaviour: 'Satisfactory',
-     size:110
+     size:130
   },
 ];
 // end guage graph --------------------------

@@ -6,8 +6,9 @@
 }
 
 .jobCard {
-  width: 286px;
-  // height: 316px;
+  width:48%;
+height: 316px;
+flex-shrink: 0; 
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
@@ -94,12 +95,12 @@
 //  GUAGE GRAH CARD
 
 .gaugeCardBody {
-  width: 240px;
+  width: 242px;
   height: 130px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  padding: 25px;
+  padding: 13px;
   margin-bottom: 20px;
 }
 
@@ -125,7 +126,7 @@
 .percentageValue {
   color: #e21d1d;
   font-family: "Google Sans";
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -135,7 +136,7 @@
 .percentageSign {
   color: #e21d1d;
   font-family: "Google Sans";
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;

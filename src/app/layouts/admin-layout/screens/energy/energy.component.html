@@ -3,9 +3,11 @@
     class="d-flex flex-wrap justify-content-between align-items-center gap-2"
   >
     <div class="energyOverviewCard" *ngFor="let item of energyCostData">
-      <div class="d-flex flex-column gap-3 align-items-center">
+      <div
+        class="d-flex flex-column gap-3 align-items-center justify-content-between mt-2"
+      >
         <div class="energyTitel">{{ item.energyTitel }}</div>
-        <div class="energyCost">
+        <div class="energyCost mt-2">
           <span class="energyCostCurrency"></span> {{ item.energyCost }}
         </div>
       </div>
@@ -13,16 +15,34 @@
     </div>
   </div>
 
-  <div
-    class="d-flex flex-wrap justify-content-between align-items-center gap-2"
-  >
+  <div class="d-flex justify-content-between my-4">
+    <div class="d-flex flex-column">
+      <div class="d-flex align-items-center gap-2">
+        <div class="blueButtonBox">
+          <div class="blueButtonText">Job Dashboard</div>
+        </div>
+
+        <select name="cars" class="selectState ml-3">
+          <option value="volvo">All Group</option>
+          <option value="down">down</option>
+          <option value="run">run</option>
+          <option value="slow">slow</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-between align-items-center">
     <!-- <app-energy-cost-details-card></app-energy-cost-details-card> -->
 
     <!-- start energy detail card-------------------------------    -->
-    <div *ngFor="let _ of [1, 2, 3, 4, 5, 6, 7, 8,9]; let i = index" class="d-flex mb-3">
+    <div
+      *ngFor="let _ of [1, 2, 3, 4, 5, 6, 7, 8]; let i = index"
+      class="d-flex mb-3"
+    >
       <div class="colorFullBar bg-danger mt-2"></div>
-    
-      <div class="energyCostOverviewCard d-flex flex-column gap-4">
+
+      <div class="energyCostOverviewCard d-flex flex-column">
         <!-- start first row------------------------------------ -->
         <div class="d-flex justify-content-between align-items-start mx-2 mt-1">
           <div class="mainHeading">W0{{ i + 1 }}</div>
@@ -32,7 +52,7 @@
           </div>
         </div>
         <!-- end first row------------------------------------ -->
-    
+
         <!-- start second row------------------------------------ -->
         <div class="d-flex justify-content-between align-items-center mt-4">
           <div class="d-flex flex-column align-items-start gap-1">
@@ -48,7 +68,7 @@
           </div>
         </div>
         <!-- end second row------------------------------------ -->
-    
+
         <!-- start second row------------------------------------ -->
         <div class="mt-3">
           <div class="grayRoundedBackground">Energy Cost/kwh € 0.17</div>
@@ -66,7 +86,7 @@
         </div>
         <!-- end second row------------------------------------ -->
       </div>
-    </div> 
+    </div>
     <!-- end energy detail card-------------------------------    -->
   </div>
 </div>

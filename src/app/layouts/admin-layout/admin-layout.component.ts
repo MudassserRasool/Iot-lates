@@ -127,7 +127,13 @@ export class AdminLayoutComponent implements OnInit {
               $sidebar_responsive.css('background-image','url("' + new_image + '")');
           }
       });
+      $(document).ready(function() {
+        $("#toggleButton").click(function() {
+            $("#elementToToggle").toggle();
+        });
+    });
   }
+  
   ngAfterViewInit() {
       this.runOnRouteChange();
   }

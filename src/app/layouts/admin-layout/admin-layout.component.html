@@ -28,10 +28,12 @@
   </div>
   <div class="fixed-plugin">
     <div class="dropdown show-dropdown open show">
-      <a href="#" data-toggle="dropdown" aria-expanded="true">
+      <a id="toggleButton" data-toggle="dropdown" aria-expanded="true">
         <i class="fa fa-cog fa-2x"> </i>
       </a>
-      <ul
+
+      <div  id="elementToToggle"  style="display: none;">
+         <ul
         class="dropdown-menu show"
         x-placement="bottom-start"
         style="
@@ -65,6 +67,8 @@
           ></a>
         </li>
       </ul>
+      </div>
+     
     </div>
   </div>
 </div>

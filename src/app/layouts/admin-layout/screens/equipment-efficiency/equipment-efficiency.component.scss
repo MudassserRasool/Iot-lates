@@ -354,11 +354,16 @@
   border:none; /* Add a border for better visibility */
   border-radius: 5px;
   padding: 12px;
+  background-color: white;
 
 
-
-
-
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.3px;
 }
 
 /* Style the options within the select element */
