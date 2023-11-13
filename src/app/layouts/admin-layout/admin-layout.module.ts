@@ -9,7 +9,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxGaugeModule } from 'ngx-gauge';
 import { EnergyCostDetailsCardComponent } from 'src/app/components/energy-cost-details-card/energy-cost-details-card.component';
 import { EnergyCostOverviewCardComponent } from 'src/app/components/energy-cost-overview-card/energy-cost-overview-card.component';
@@ -54,7 +53,11 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
 // import { GanttChartModule } from '@smart-webcomponents-angular/ganttchart';
 // import GanttChartMo
 // import { GanttComponent, EditService , FilterService, SortService, SelectionService, ToolbarService,DayMarkersService } from '@syncfusion/ej2-angular-gantt';
-import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import {
+  EditService,
+  SelectionService,
+  ToolbarService,
+} from '@syncfusion/ej2-angular-gantt';
 @NgModule({
   declarations: [
     UserProfileComponent,
@@ -107,7 +110,6 @@ import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-
     MatTooltipModule,
     MatCheckboxModule,
     NgxGaugeModule,
-    NgbModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatIconModule,
@@ -124,6 +126,6 @@ import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-
     NgApexchartsModule,
   ],
   // providers: [ EditService , FilterService, SortService, SelectionService,ToolbarService,DayMarkersService ]
-  providers: [ToolbarService, EditService, SelectionService]
+  providers: [ToolbarService, EditService, SelectionService],
 })
 export class AdminLayoutModule {}

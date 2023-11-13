@@ -25,9 +25,9 @@ export class CurrentShiftComponent implements OnInit {
     behaviour: string;
   } = { titel: '', value: 0, behaviour: '' };
   thresholdConfig = {
-    '0': { color: '#ED4E3D', label: 'unsatisfy' }, // red
+    '0': { color: '#FF5151', label: 'unsatisfy' }, // red
     '50': { color: '#F2BF48', label: 'satisfy' }, // orange
-    '75': { color: '#58C540', label: 'good' }, // green
+    '75': { color: '#43AD90', label: 'good' }, // green
   };
 
   ngOnInit(): void {
@@ -102,7 +102,6 @@ export class CurrentShiftComponent implements OnInit {
           },
         ],
       },
-      
     };
   }
 }

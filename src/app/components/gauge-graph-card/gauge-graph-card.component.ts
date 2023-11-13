@@ -16,7 +16,7 @@ export class GaugeGraphCardComponent implements OnInit {
   thresholdConfig = {
     '0': { color: '#ED4E3D', label: 'unsatisfy' },  // red
     '50': { color: '#F2BF48', label: 'satisfy' },   // orange
-    '75': { color: '#58C540', label: 'good' }      // green
+    '75': { color: '#40AE94', label: 'good' }      // green
   };
 
   ngOnInit(): void {

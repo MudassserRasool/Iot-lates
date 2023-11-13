@@ -93,15 +93,12 @@
  =========================================================
 /*     brand Colors              */
 
-
-
 div[style*="top: 6px; position: absolute; left: 16px; width: 24px; height: 24px;"] {
   display: none !important;
 }
 
-
 div[style="position: fixed; top: 10px; left: 10px; right: 10px; font-size: 14px; background: #EEF2FF; color: #222222; z-index: 999999999; text-align: left; border: 1px solid #EEEEEE; padding: 10px 11px 10px 50px; border-radius: 8px; font-family: Helvetica Neue, Helvetica, Arial;"] {
-display: none !important;
+  display: none !important;
 }
 
 .card {
@@ -21879,15 +21876,15 @@ body {
 }
 
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-layouts/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-grids/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-treegrid/styles/material.css";
 // @import '../node_modules/@syncfusion/ej2-gantt/styles/material.css';
@@ -23773,12 +23770,12 @@ body {
   display: none;
 }
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar-inner-div {
-  background-color: #FFCE51;
+  background-color: #ffce51;
   outline: 1px solid #616161;
   border-radius: 4px;
 }
 .e-gantt .e-gantt-chart .e-gantt-parent-progressbar-inner-div {
-  background-color: #FF5151;
+  background-color: #ff5151;
   border: 0px;
   border-radius: 4px;
 }
@@ -24176,4 +24173,37 @@ body {
   border-top: none;
 }
 
+.gauge-half .reading-block {
+  display: none !important;
+  transform: none !important; /* Override the translateY transformation */
+}
 
+.mat-mdc-progress-bar
+  mdc-linear-progress
+  audio-progress-bar
+  mat-primary
+  mdc-linear-progress--animation-ready {
+  display: none !important;
+}
+
+mat-progress-bar{
+  // display: none !important;
+  height: -20px !important;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: green;
+}
+
+
+// div[style="position: fixed; top: 10px; left: 10px; right: 10px; font-size: 14px; background: #EEF2FF; color: #222222; z-index: 999999999; text-align: left; border: 1px solid #EEEEEE; padding: 10px 11px 10px 50px; border-radius: 8px; font-family: Helvetica Neue, Helvetica, Arial;"] {
+//   display: none !important;
+// }
+
+// div[style="position: fixed; top: 10px; left: 10px; right: 10px; font-size: 14px; background: #EEF2FF; color: #222222; z-index: 999999999; text-align: left; border: 1px solid #EEEEEE; padding: 10px 11px 10px 50px; border-radius: 8px; font-family: Helvetica Neue, Helvetica, Arial;"] img,
+// div[style="position: fixed; top: 10px; left: 10px; right: 10px; font-size: 14px; background: #EEF2FF; color: #222222; z-index: 999999999; text-align: left; border: 1px solid #EEEEEE; padding: 10px 11px 10px 50px; border-radius: 8px; font-family: Helvetica Neue, Helvetica, Arial;"] span {
+//   display: none !important; /* or whatever display property you want for the child elements */
+// }
+// span{
+//   display: none !important;
+// }

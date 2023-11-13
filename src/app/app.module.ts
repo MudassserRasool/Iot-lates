@@ -8,7 +8,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
@@ -54,6 +53,7 @@ import { PhoneOtpComponent } from './pages/two-step-authentication-forms/phone-o
 // import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 // import { NgApexchartsModule } from 'ng-apexcharts';
 import { MatTabsModule } from '@angular/material/tabs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { EquipmentEfficiencyListViewComponent } from './components/equipment-efficiency-list-view/equipment-efficiency-list-view.component';
 
 // import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -96,7 +96,6 @@ import { MatTabsModule } from '@angular/material/tabs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     MatSlideToggleModule,
     MatInputModule,
     MatFormFieldModule,
@@ -116,6 +115,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     NgxIntlTelInputModule,
     NgOtpInputModule,
     MatTabsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -8,7 +8,7 @@
 // guage graph card
 
 .gaugeCardBody {
-  width: 240px;
+  width: 253px;
   height: 130px;
   border-radius: 10px;
   background: #fff;
@@ -74,12 +74,12 @@
 
 .energyOverviewCard {
   padding: 22px;
-  width: 240px;
+  width: 253px;
   height: 130px;
   margin-bottom: 15px;
   border-radius: 6px;
   background-color: #fff;
-  box-shadow: 10px 10px 15px 0px rgba(71, 80, 97, 0.08);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 .energyTitel {
@@ -138,15 +138,15 @@ line-height: normal;
 
 .jobMainText {
   color: #1a1736;
-  font-family: Google Sans;
-  font-size: 24px;
+  font-family: 'Google Sans';
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .jobSmallText {
   color: #1a1736;
-  font-family: Google Sans;
+  font-family: 'Google Sans';
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -156,14 +156,23 @@ line-height: normal;
 
 .verticalJobBar {
   width: 1.5px;
-  height: 77px;
+  height: 70px;
   background-color: #efefef;
 }
 
 .circleGraphCard{
     
 }
-
+.progressbarInfo {
+  display: inline;
+  color: #1a1736;
+  // text-align: right;
+  font-family: "Google Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.12px;
+}
 // .custom-div {
 //   position: fixed;
 //   bottom: 3%;

@@ -387,18 +387,28 @@
   letter-spacing: -0.36px;
 }
 
-.graphAmountTitle{
-  color: #1A1736;
-  font-family: 'Google Sans';
+.graphAmountTitle {
+  color: #1a1736;
+  font-family: "Google Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
 }
 
-.graphAmount{
-  color: #1A1736;
-  font-family: 'Google Sans';
+.graphAmount {
+  color: #1a1736;
+  font-family: "Google Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
+}
+
+.progressbarInfo {
+  display: inline;
+  color: #1a1736;
+  font-family: "Google Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.12px;
 }
