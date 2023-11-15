@@ -1,25 +1,29 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators, AbstractControl} from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 // import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
 
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.scss']
+  styleUrls: ['./registration.component.scss'],
 })
 export class RegistrationComponent {
-
-
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
   fullNameFormControl = new FormControl('', [Validators.required]);
   contactNumberFormControl = new FormControl(null, [Validators.required]);
   jobTitleFormControl = new FormControl('', [Validators.required]);
   departmentFormControl = new FormControl('', [Validators.required]);
-  termsAndConditionsFormControl = new FormControl(false, [Validators.requiredTrue]);
+  termsAndConditionsFormControl = new FormControl(false, [
+    Validators.requiredTrue,
+  ]);
   privacyPolicyFormControl = new FormControl(false, [Validators.requiredTrue]);
 
   hidePassword = true;
   errorMessage = '';
+  buttonClicked = false;
   // passwordFormControl = new FormControl('', [Validators.required]);
   confirmPasswordFormControl = new FormControl('', [Validators.required]);
   passwordsDoNotMatch = false;
@@ -28,11 +32,11 @@ export class RegistrationComponent {
     Validators.minLength(8), // Adjust the minimum length as needed
     // Add other password validation rules here
   ]);
-  
+
   comparePasswords(): void {
     const password = this.passwordFormControl.value;
     const confirmPassword = this.confirmPasswordFormControl.value;
-  
+
     if (password !== confirmPassword) {
       this.confirmPasswordFormControl.setErrors({ passwordsDoNotMatch: true });
     } else {
@@ -50,6 +54,7 @@ export class RegistrationComponent {
   // }
 
   onLoginButtonClick(): void {
+    this.buttonClicked = true;
     if (
       this.emailFormControl.invalid ||
       this.passwordFormControl.invalid ||
@@ -72,7 +77,7 @@ export class RegistrationComponent {
 
   isPasswordValid(validationRule: string): boolean {
     const passwordValue = this.passwordFormControl.value;
-  
+
     // if (validationRule === 'minlength') {
     //   return !!passwordValue && passwordValue.length >= 8 && this.passwordFormControl.hasError('minlength');
     // }
@@ -91,11 +96,9 @@ export class RegistrationComponent {
     }
     return false;
   }
-  
+
   isPasswordMinLengthValid(): boolean {
     const passwordValue = this.passwordFormControl.value;
     return !!passwordValue && passwordValue.length >= 8;
   }
-  
-  
 }

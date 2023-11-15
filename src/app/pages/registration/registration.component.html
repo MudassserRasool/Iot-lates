@@ -7,7 +7,7 @@
           <div class="d-flex mx-3 p-2">
             <div class="d-flex flex-column gap-4 mx-auto">
               <!-- start form------------------------------->
-              <h1 class="formHeading">Sign Up</h1>
+              <h1 class="formHeading ">Sign Up</h1>
               <form class="example-form gap-4">
                 <!-- Full Name Field -->
                 <mat-form-field class="example-full-width" appearance="outline">
@@ -110,11 +110,12 @@
                       {{ hidePassword ? "visibility_off" : "visibility" }}
                     </mat-icon>
                   </button>
-                  <mat-error *ngIf="passwordFormControl.hasError('required')">
+                  <mat-error *ngIf="buttonClicked && passwordFormControl.hasError('required')">
                     Password is <strong>required</strong>
                   </mat-error>
                 </mat-form-field>
-                <div class="password-validation mb-2 d-flex flex-column gap-2">
+                
+                <div *ngIf="buttonClicked" class="password-validation mb-2 d-flex flex-column gap-2">
                   <div
                     [ngClass]="{
                       'text-danger': !isPasswordMinLengthValid(),
@@ -242,13 +243,14 @@
 
               <!-- start button-------------------- -->
               <button
-                class="d-flex loginButton justify-content-center"
-                mat-raised-button
-                color="primary"
-                (click)="onLoginButtonClick()"
-              >
-                LOG IN
-              </button>
+              class="d-flex loginButton justify-content-center"
+              mat-raised-button
+              color="primary"
+              (click)="onLoginButtonClick()"
+            >
+              CREATE ACCOUNT
+            </button>
+            
               <!-- </div> -->
 
               <!-- end button-------------------- -->

@@ -1,5 +1,3 @@
-
-
 .coustomerName {
   color: #347ae2;
   font-family: "Google Sans";
@@ -96,4 +94,144 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.addButton {
+  width: 157px;
+  height: 50px;
+  background: linear-gradient(90deg, #1e2772 2.56%, #09aef9 99.94%);
+
+  font-family: "Google Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.3px;
+}
+
+.sectionMainHeading {
+  color: #1a1736;
+  font-family: " Google Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blueButtonBox {
+  width: 200px;
+  height: 42px;
+  background: linear-gradient(90deg, #1e2772 2.56%, #09aef9 99.94%);
+  text-align: center;
+  border-radius: 5px;
+}
+.blueButtonText {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.3px;
+  margin-top: 10px;
+}
+
+.allGroupBox {
+  width: 293px;
+  height: 42px;
+  background: white;
+  text-align: start;
+  border-radius: 5px;
+}
+.allGroupText {
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  margin-top: 10px;
+  padding-left: 13px;
+}
+
+// .selectState {
+//   width: 193px;
+//   // background-color: white;
+//
+
+//   padding-left: 42px !important;
+//   padding-bottom: 42px !important;
+//   border: none;
+//   border-radius: 5px;
+// }
+
+.selectState {
+  width: 193px;
+  padding: 5px; /* Add padding to the select element */
+  border: none; /* Add a border for better visibility */
+  border-radius: 5px;
+  padding: 12px;
+  background-color: white;
+
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+/* Style the options within the select element */
+.selectState option {
+  background-color: white;
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.3px;
+}
+
+/* Style the select element when it's focused */
+.selectState:focus {
+  outline: none; /* Remove the default focus outline */
+  border: 1px solid #09aef9; /* Highlight the border when focused */
+  box-shadow: 0 0 5px rgba(9, 174, 249, 0.5); /* Add a subtle shadow */
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 293px;
+  height: 42px;
+  background: white;
+  text-align: start;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+
+  color: #1a1736;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Google Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.3px;
 }
