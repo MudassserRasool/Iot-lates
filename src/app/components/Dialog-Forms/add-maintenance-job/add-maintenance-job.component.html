@@ -1,0 +1,134 @@
+<div class="container formPage">
+  <div class="formHeading">Add Maintenance Job</div>
+  <form class="mt-4">
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <!-- <mat-form-field class="col col-md-12" appearance="outline">
+      <mat-label
+        >Search by Product/Tool
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Default Product - Default product code "
+        [formControl]="searchProduct"
+      />
+      <mat-error *ngIf="searchProduct.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field> -->
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Estimated Start selector--------------------------- -->
+    <!-- <mat-form-field class="col col-md-12" appearance="outline">
+      <mat-label>
+        Estimated Start
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="estimatedStart" class="z-index-3">
+        <mat-option value="estimatedStart-1">estimatedStart-1</mat-option>
+        <mat-option value="estimatedStart-2">estimatedStart-2</mat-option>
+      </mat-select>
+      <mat-error *ngIf="estimatedStart.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field> -->
+    <!-- end Estimated Start selector--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <div class="" style="border-color: #1e2772;">
+      <mat-form-field class="col w-100 form-color" appearance="outline">
+        <mat-label>Maintenance Job ID </mat-label>
+        <input matInput placeholder="Enter Factory Name" />
+      </mat-form-field>
+    </div>
+    
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Estimated Start selector--------------------------- -->
+    <select
+      class="col mx-auto form-select p-3 select-form form-color"
+      aria-label=".form-select-lg example"
+    >
+      <option selected>Tool/Equipment</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <!-- end Estimated Start selector--------------------------- -->
+
+    <!-- start *Tools Description Start selector--------------------------- -->
+    <select
+      class="col mx-auto form-select p-3 select-form form-color mt-4"
+      aria-label=".form-select-lg example"
+    >
+      <option selected>Tools Description</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <!-- end *Tools Description Start selector--------------------------- -->
+
+    <!-- start SeaDepartment  input--------------------------- -->
+    <mat-form-field class="col w-100 form-color mt-4" appearance="outline">
+      <mat-label>Department </mat-label>
+      <input matInput placeholder="Enter Description" />
+    </mat-form-field>
+    <!-- end SeaDepartment  input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Enter Performance" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Status</mat-label>
+      <input matInput placeholder="Enter Availability" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Priority</mat-label>
+      <input matInput placeholder="Enter Factory Name" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Assign to</mat-label>
+      <input matInput placeholder="Enter Quality" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Reported By</mat-label>
+      <input matInput placeholder="Select Order" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Created Date</mat-label>
+      <input matInput placeholder="6-6-222" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start Search by Product/Tool input--------------------------- -->
+    <mat-form-field class="col w-100 form-color" appearance="outline">
+      <mat-label>Due Date</mat-label>
+      <input matInput placeholder="7-10-23" />
+    </mat-form-field>
+    <!-- end Search by Product/Tool input--------------------------- -->
+
+    <!-- start buttons-------------------------------------------- -->
+    <div class="d-flex justify-content-end gap-2 mt-4">
+      <button mat-raised-button class="cancelButton">CANCEL</button>
+      <button mat-raised-button class="addButton text-white">ADD</button>
+    </div>
+    <!-- end buttons-------------------------------------------- -->
+  </form>
+</div>

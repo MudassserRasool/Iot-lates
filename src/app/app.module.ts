@@ -54,6 +54,7 @@ import { PhoneOtpComponent } from './pages/two-step-authentication-forms/phone-o
 // import { NgApexchartsModule } from 'ng-apexcharts';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddMaintenanceJobComponent } from './components/Dialog-Forms/add-maintenance-job/add-maintenance-job.component';
 // import { EquipmentEfficiencyListViewComponent } from './components/equipment-efficiency-list-view/equipment-efficiency-list-view.component';
 
 // import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -91,6 +92,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     EmailAuthenticationComponent,
     PhoneOtpComponent,
     PhoneAuthenticationSuccessComponent,
+    AddMaintenanceJobComponent,
     // GaugeNeedleGraphComponent,
   ],
   imports: [

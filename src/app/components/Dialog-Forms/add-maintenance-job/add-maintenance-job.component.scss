@@ -1,0 +1,83 @@
+.formPage {
+  margin-top: 15px;
+  // margin-left: 10px;
+}
+
+.formHeading {
+  color: #1e2772;
+  font-family: "Inter";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.checkBoxHeading {
+  color: #1e2772;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.checkBoxLabel {
+  color: #1e2772;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.addButton {
+  width: 157px;
+  height: 50px;
+  background: linear-gradient(90deg, #1e2772 2.56%, #09aef9 99.94%);
+
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cancelButton {
+  width: 157px;
+  height: 50px;
+  border: 2px solid #1f2873;
+  color: #1f2873;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 block;
+}
+.form-color {
+  // stroke-width: 1px;
+  // stroke: #1e2772;
+  border-color: #b0b0b3;
+}
+.select-form {
+  width: 95%;
+}
+
+// .bootstrap-select.btn-group .dropdown-menu li a:hover {
+//   color: whitesmoke !important;
+//   background: #bf5279 !important;
+// }
+
+button[data-toggle="dropdown"].btn-default,
+button[data-toggle="dropdown"]:hover {
+background-color: white !important;
+color: #2c3e50 !important;
+border: 2px solid #dce4ec;
+}
